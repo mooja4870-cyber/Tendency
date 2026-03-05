@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import React from 'react';
+import { motion } from 'motion/react';
 import { Play } from 'lucide-react';
 
 interface OnboardingScreenProps {
@@ -7,111 +7,114 @@ interface OnboardingScreenProps {
 }
 
 export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) => {
-  const [onboardingIndex, setOnboardingIndex] = useState(0);
-
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}
-      className="max-w-md mx-auto px-6 flex flex-col h-full bg-[#FAFAFA]"
-      style={{ paddingTop: 'max(env(safe-area-inset-top, 0px), 1.5rem)', paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 1rem)' }}
+    <div
+      className="h-full flex flex-col justify-between text-white relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(180deg, #0a0e17 0%, #0d121f 100%)',
+        paddingTop: 'max(env(safe-area-inset-top, 0px), 2rem)',
+        paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 2rem)'
+      }}
     >
-      {/* 스크롤 가능한 콘텐츠 영역 */}
-      <div className="flex-1 flex flex-col justify-center overflow-y-auto min-h-0 py-4">
-        <div className="space-y-6 flex flex-col justify-center">
-          <div>
-            <motion.p
-              animate={{ opacity: [0.4, 1, 0.4] }}
-              transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-              className="text-center text-[36px] font-black text-cta mb-3 tracking-tight"
-            >
-              "1분 완성"
-            </motion.p>
-            <div className="flex gap-1">
-              {[0, 1, 2].map(i => (
-                <div key={i} className={`h-1 flex-1 rounded-full transition-all ${i === onboardingIndex ? 'bg-cta' : 'bg-black/5'}`} />
-              ))}
-            </div>
-          </div>
+      {/* Background Glowing Effects */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-indigo-600/20 rounded-full blur-[100px] -z-10 pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-fuchsia-600/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={onboardingIndex}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="text-center flex flex-col items-center"
-            >
-              {onboardingIndex === 0 && (
-                <>
-                  <div className="inline-flex flex-col items-center bg-[#A41034]/10 border border-[#A41034]/20 rounded-2xl px-5 py-2.5 mb-5">
-                    <span className="text-xl mb-0.5">🎓</span>
-                    <span className="text-[11px] font-black text-[#A41034] tracking-tight">Harvard University</span>
-                    <span className="text-[11px] font-black text-[#A41034] tracking-tight">연구 기반</span>
-                  </div>
-                  <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight">
-                    나도 몰랐던 <br />
-                    나의 <span className="gradient-text-warm">관점·성향</span>을 <br />
-                    발견하세요 !
-                  </h2>
-                  <p className="text-base text-[#666666] leading-relaxed mb-3" style={{ textWrap: 'balance' }}>
-                    30개의 질문을 통해 당신의 관점·성향을 정밀하게 분석합니다.
-                  </p>
-                  <p className="text-xs text-[#999999] leading-relaxed" style={{ textWrap: 'balance' }}>
-                    본 진단은 미국 하버드 대학교 Jonathan Haidt 교수의
-                    <span className="font-bold text-[#777777]"> Moral Foundations Theory</span>(도덕적 기반 이론)
-                    연구 결과를 근거로 설계되었습니다.
-                  </p>
-                </>
-              )}
-              {onboardingIndex === 1 && (
-                <>
-                  <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight" style={{ textWrap: 'balance' }}>
-                    <span className="gradient-text-cool">도덕적 기반</span> <br />
-                    이론에 근거한 <br />
-                    심층 분석
-                  </h2>
-                  <p className="text-base text-center-deep leading-relaxed" style={{ textWrap: 'balance' }}>
-                    단순한 보수/진보를 넘어 5가지 도덕적 가치를 측정합니다.
-                  </p>
-                </>
-              )}
-              {onboardingIndex === 2 && (
-                <>
-                  <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight" style={{ textWrap: 'balance' }}>
-                    나와 닮은 <br />
-                    <span className="gradient-text-sunset">캐릭터</span>와 <br />
-                    함께 확인하세요
-                  </h2>
-                  <p className="text-base text-center-deep leading-relaxed" style={{ textWrap: 'balance' }}>
-                    분석 결과에 따른 맞춤형 캐릭터와 피드백을 제공합니다.
-                  </p>
-                </>
-              )}
-            </motion.div>
-          </AnimatePresence>
+      {/* CSS for animations & specific effects */}
+      <style>{`
+        @keyframes floating {
+          0% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-12px) rotate(2deg); }
+          100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .crystal-ball {
+          animation: floating 4s ease-in-out infinite;
+          filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.4));
+        }
+        .glass-btn {
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+      `}</style>
+
+      {/* Top / Hero Section */}
+      <div className="flex-1 flex flex-col items-center justify-center px-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-[6rem] leading-none mb-4 crystal-ball z-10"
+        >
+          🔮
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-center z-10"
+        >
+          <h1 className="text-5xl font-black mb-3 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 drop-shadow-sm">
+            Prism
+          </h1>
+          <p className="text-[1.05rem] text-gray-400 font-medium leading-relaxed tracking-tight" style={{ textWrap: 'balance' }}>
+            다각도로 분석하는<br />나의 입체적 정치 관점·성향
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Features Showcase (Glassmorphism Cards) */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="px-5 pb-8 space-y-3 z-10"
+      >
+        <div className="glass-btn flex flex-col p-4 rounded-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-full blur-[20px] -translate-y-1/2 translate-x-1/2" />
+          <h3 className="text-sm text-gray-300 font-bold uppercase tracking-widest mb-1">Feature 01</h3>
+          <p className="text-lg font-bold text-white tracking-tight">상세한 8차원 성향 분석</p>
         </div>
-      </div>
 
-      {/* 하단 버튼 - 항상 보이도록 shrink-0 */}
-      <div className="shrink-0 pb-2 pt-3">
-        {onboardingIndex < 2 ? (
-          <button
-            onClick={() => setOnboardingIndex(prev => prev + 1)}
-            className="w-full bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20"
-          >
-            다음으로
-          </button>
-        ) : (
-          <button
-            onClick={onStart}
-            className="w-full bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20"
-          >
-            진단 시작하기 <Play className="w-4 h-4 fill-current" />
-          </button>
-        )}
-      </div>
-    </motion.div>
+        <div className="glass-btn flex flex-col p-4 rounded-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-[20px] -translate-y-1/2 translate-x-1/2" />
+          <h3 className="text-sm text-gray-300 font-bold uppercase tracking-widest mb-1">Feature 02</h3>
+          <p className="text-lg font-bold text-white tracking-tight">나와 닮은 역사 인물 매칭</p>
+        </div>
+      </motion.div>
+
+      {/* Bottom Action Area */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        className="px-5 pb-4 z-10 shrink-0"
+      >
+        <button
+          onClick={onStart}
+          className="w-full relative group overflow-hidden rounded-[20px] p-[1px] shadow-2xl active:scale-[0.98] transition-all duration-300"
+        >
+          {/* Animated Gradient Border */}
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-100 blur-md group-hover:opacity-100 transition-opacity duration-300" />
+
+          {/* Inner Content */}
+          <div className="relative bg-[#0d121f]/90 backdrop-blur-xl px-6 py-[18px] rounded-[19px] flex items-center justify-center gap-2">
+            <span className="text-[1.1rem] font-bold text-white tracking-tight shadow-sm">
+              심층 진단 시작하기 (1분)
+            </span>
+            <Play className="w-[18px] h-[18px] fill-white text-white drop-shadow-sm" />
+          </div>
+        </button>
+
+        <p className="text-center text-[0.65rem] text-gray-500 mt-4 px-4 leading-relaxed font-light">
+          미국 하버드 대학교 Moral Foundations Theory에 근거한 분석입니다. 모든 응답은 익명으로 안전하게 처리됩니다.
+        </p>
+      </motion.div>
+    </div>
   );
 };
+
