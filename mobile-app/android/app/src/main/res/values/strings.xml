@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Tendency</string>
+    <string name="title_activity_main">Tendency</string>
+    <string name="package_name">com.politest.app</string>
+    <string name="custom_url_scheme">com.politest.app</string>
+</resources>
