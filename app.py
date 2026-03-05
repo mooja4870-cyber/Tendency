@@ -1,18 +1,16 @@
-"""
-🔮 프리즘 (Prism) — 정치 성향 진단 앱
-메인 진입점: Streamlit 앱 설정 + 홈 페이지
-"""
 import streamlit as st
 import uuid
 import sys
 import os
 import traceback
 
+# ═══ 앱 경로 보정 (Streamlit Cloud 환경 대응) ═══
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+
 try:
-    # ═══ 앱 경로 보정 (Streamlit Cloud 환경 대응) ═══
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    if current_dir not in sys.path:
-        sys.path.append(current_dir)
+    from database.connection import get_supabase
 
     # ═══ 페이지 설정 ═══
     st.set_page_config(
@@ -21,8 +19,6 @@ try:
         layout="wide",
         initial_sidebar_state="collapsed",
     )
-
-    from database.connection import get_supabase
 
     # ═══ 웹에서의 모바일 뷰 스타일 (CSS 빌드) ═══
     st.markdown("""
@@ -89,33 +85,26 @@ try:
     if st.button("🔍 전역 통계 및 탐색", use_container_width=True):
         st.switch_page("pages/5_explore.py")
 
+    # 전역 통계 미리보기
+    st.markdown("<div style='height: 30px'></div>", unsafe_allow_html=True)
+    try:
+        from services.stats_service import get_orientation_distribution
+        stats = get_orientation_distribution()
+        if stats and stats.get("total_users", 0) > 0:
+            st.markdown(f"""
+            <div style="background-color: #F0F2F6; border-radius: 12px; padding: 15px; text-align: center;">
+                <p style="margin: 0; color: #555; font-size: 0.9em;">현재까지</p>
+                <h2 style="margin: 5px 0; color: #6C5CE7;">{stats['total_users']:,}명 참여</h2>
+                <p style="margin: 0; color: #555; font-size: 0.8em;">다양한 관점이 모여 완성됩니다.</p>
+            </div>
+            """, unsafe_allow_html=True)
+    except Exception:
+        pass
+
     st.markdown("<div style='height: 40px'></div>", unsafe_allow_html=True)
     st.caption("© 2025 Prism Project. 모든 데이터는 익명으로 처리됩니다.")
 
 except Exception as e:
-    st.error("🚀 배포 중 오류가 발생했습니다!")
+    st.error("🚀 앱 실행 중 오류가 발생했습니다!")
     st.exception(e)
     st.code(traceback.format_exc())
-
-# 전역 통계 미리보기 (카드 스타일)
-st.markdown("<div style='height: 30px'></div>", unsafe_allow_html=True)
-try:
-    from services.stats_service import get_orientation_distribution
-    stats = get_orientation_distribution()
-    if stats and stats.get("total_users", 0) > 0:
-        st.markdown(f"""
-        <div style="background-color: #F0F2F6; border-radius: 12px; padding: 15px; text-align: center;">
-            <p style="margin: 0; color: #555; font-size: 0.9em;">현재까지</p>
-            <h2 style="margin: 5px 0; color: #6C5CE7;">{stats['total_users']:,}명 참여</h2>
-            <p style="margin: 0; color: #555; font-size: 0.8em;">다양한 관점이 모여 완성됩니다.</p>
-        </div>
-        """, unsafe_allow_html=True)
-except Exception:
-    pass
-
-# 하단
-st.markdown("<div style='height: 40px'></div>", unsafe_allow_html=True)
-st.caption(
-    "프리즘은 심리학 연구와 도덕 기반 이론에 근거하여 정치 성향을 분석합니다. "
-    "모든 데이터는 익명으로 처리됩니다."
-)
