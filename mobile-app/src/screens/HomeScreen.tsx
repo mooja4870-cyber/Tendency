@@ -71,7 +71,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
               🔮
             </div>
 
-            <h3 className="text-2xl font-extrabold text-black/40 mb-1 tracking-tight">나의 관점/성향</h3>
+            <h3 className="text-2xl font-extrabold text-black/40 mb-1 tracking-tight">나의 관점·성향</h3>
             <h2
               className="text-6xl font-display font-black mb-6 tracking-tight"
               style={{ color: getColorForLabel(result.overallLabel) }}
@@ -96,6 +96,22 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
           <h3 className="text-5xl font-display font-extrabold text-black/80 px-1 tracking-tight">🔍 더 깊이 알아보기</h3>
 
           <div className="grid grid-cols-2 gap-3">
+            {/* 상세 분석 - 와이드형 (상단 배치) */}
+            <motion.button
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => onNavigate('/detail')}
+              className="col-span-2 bg-[#B8E6CF] bg-opacity-20 rounded-[20px] px-6 py-4 flex items-center justify-between border border-white shadow-sm active:scale-95 transition-transform h-[85px]"
+            >
+              <div className="flex items-center gap-4">
+                <div className="text-6xl">📊</div>
+                <div className="text-left">
+                  <h4 className="font-black text-[22px] leading-tight text-black/80">상세 분석</h4>
+                  <p className="text-[17px] font-bold text-black/40 text-left">항목별·도덕기반</p>
+                </div>
+              </div>
+            </motion.button>
+
             <FeatureCard
               emoji="🪞"
               title="인지편향\n거울"
@@ -145,12 +161,13 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
               color="bg-[#A8D8EA]"
               onClick={() => onNavigate('/figure-match')}
             />
+            {/* 결과 공유 - 그리드 편입 */}
             <FeatureCard
-              emoji="📊"
-              title="상세\n분석"
-              subtitle="항목별·도덕기반"
-              color="bg-[#B8E6CF]"
-              onClick={() => onNavigate('/detail')}
+              emoji="🔗"
+              title="결과\n공유"
+              subtitle="친구에게 보내기"
+              color="bg-white"
+              onClick={handleShare}
             />
           </div>
         </div>
@@ -159,11 +176,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
         <div className="space-y-3 pt-4">
           <div className="flex gap-3">
             <button
-              onClick={handleShare}
-              className="flex-1 bg-white border border-black/10 h-16 rounded-2xl flex items-center justify-center gap-2 font-bold text-2xl shadow-sm active:scale-95 transition-transform"
+              onClick={handleEnableNotifications}
+              className="flex-1 bg-[#F0EAFF] text-[#667EEA] h-16 rounded-2xl flex items-center justify-center gap-2 font-bold text-2xl shadow-sm active:scale-95 transition-transform"
             >
-              <Share2 className="w-5 h-5" />
-              결과 공유
+              <Bell className="w-5 h-5" />
+              토론 알림
             </button>
             <button
               onClick={reset}
@@ -173,14 +190,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
               다시하기
             </button>
           </div>
-
-          <button
-            onClick={handleEnableNotifications}
-            className="w-full bg-[#F0EAFF] text-[#667EEA] h-12 rounded-xl flex items-center justify-center gap-2 font-bold text-xl active:scale-95 transition-transform"
-          >
-            <Bell className="w-4 h-4" />
-            주간 토론 알림 받기
-          </button>
         </div>
       </div>
     </motion.div>
@@ -234,7 +243,10 @@ function SpectrumBar({ position, leftLabel, rightLabel }: { position: number, le
           initial={{ left: '50%' }}
           animate={{ left: `${position * 100}%` }}
           transition={{ type: 'spring', damping: 20, stiffness: 100 }}
-          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-[3px] border-black rounded-full shadow-md z-10"
+          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-[#FFD700] border-[2px] border-white shadow-md z-10"
+          style={{
+            rotate: '45deg'
+          }}
         />
       </div>
     </div>
