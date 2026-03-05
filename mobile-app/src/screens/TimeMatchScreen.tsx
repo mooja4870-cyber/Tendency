@@ -44,7 +44,7 @@ export const TimeMatchScreen: React.FC<TimeMatchScreenProps> = ({ matches, onBac
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-display font-extrabold tracking-tight">시대·국가 매칭</h2>
+          <h2 className="text-6xl font-display font-extrabold tracking-tight">시대·국가 매칭</h2>
         </div>
 
         <div className="space-y-4">
@@ -54,13 +54,13 @@ export const TimeMatchScreen: React.FC<TimeMatchScreenProps> = ({ matches, onBac
           >
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-4 left-8 text-6xl">🌏</div>
-              <div className="absolute bottom-4 right-8 text-5xl">🌍</div>
-              <div className="absolute top-12 right-16 text-4xl">🌎</div>
+              <div className="absolute bottom-4 right-8 text-7xl">🌍</div>
+              <div className="absolute top-12 right-16 text-6xl">🌎</div>
             </div>
             <div className="relative z-10">
-              <p className="text-white/60 text-xs font-bold mb-2">만약 다른 나라, 다른 시대에 태어났다면?</p>
-              <h3 className="text-white text-xl font-display font-black mb-1 tracking-tight">당신의 관점/성향은</h3>
-              <p className="text-white/80 text-sm">어떤 위치에 놓이게 될까요?</p>
+              <p className="text-white/60 text-xl font-bold mb-2">만약 다른 나라, 다른 시대에 태어났다면?</p>
+              <h3 className="text-white text-5xl font-display font-black mb-1 tracking-tight">당신의 관점/성향은</h3>
+              <p className="text-white/80 text-2xl">어떤 위치에 놓이게 될까요?</p>
             </div>
           </div>
 
@@ -80,12 +80,12 @@ export const TimeMatchScreen: React.FC<TimeMatchScreenProps> = ({ matches, onBac
                     className="bg-white rounded-2xl p-6 shadow-sm border border-black/5"
                   >
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="text-5xl">{match.flagEmoji}</div>
+                      <div className="text-7xl">{match.flagEmoji}</div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-black">{match.countryName}</h3>
-                        <p className="text-black/40 text-xs font-bold">{match.era}</p>
+                        <h3 className="text-5xl font-black">{match.countryName}</h3>
+                        <p className="text-black/40 text-xl font-bold">{match.era}</p>
                       </div>
-                      <div className={`${labelStyle.bg} ${labelStyle.text} px-3 py-1.5 rounded-full text-xs font-black`}>
+                      <div className={`${labelStyle.bg} ${labelStyle.text} px-3 py-1.5 rounded-full text-xl font-black`}>
                         {match.equivalentLabel}
                       </div>
                     </div>
@@ -112,12 +112,12 @@ export const TimeMatchScreen: React.FC<TimeMatchScreenProps> = ({ matches, onBac
 
                     {match.surprise && (
                       <div className="p-3 bg-amber-50 rounded-xl border border-amber-100 mb-3">
-                        <h4 className="text-[10px] font-black uppercase text-amber-500 mb-1">📌 의외의 사실</h4>
-                        <p className="text-xs font-medium text-amber-900/80">{match.surprise}</p>
+                        <h4 className="text-[15px] font-black uppercase text-amber-500 mb-1">📌 의외의 사실</h4>
+                        <p className="text-xl font-medium text-amber-900/80">{match.surprise}</p>
                       </div>
                     )}
 
-                    <p className="text-xs text-black/50 leading-relaxed">
+                    <p className="text-xl text-black/50 leading-relaxed">
                       {match.explanation}
                     </p>
                   </motion.div>
@@ -130,7 +130,7 @@ export const TimeMatchScreen: React.FC<TimeMatchScreenProps> = ({ matches, onBac
           {!showAll && matches.length > 3 && (
             <button
               onClick={() => setShowAll(true)}
-              className="w-full bg-white border border-black/10 h-12 rounded-xl text-sm font-bold text-black/50 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform"
+              className="w-full bg-white border border-black/10 h-12 rounded-xl text-2xl font-bold text-black/50 flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform"
             >
               {matches.length - 3}개 나라 더 보기 <ChevronDown className="w-4 h-4" />
             </button>
@@ -138,8 +138,8 @@ export const TimeMatchScreen: React.FC<TimeMatchScreenProps> = ({ matches, onBac
 
           {/* Insight */}
           <div className="p-6 bg-indigo-50 rounded-2xl border border-indigo-100">
-            <h4 className="text-[10px] font-black uppercase text-indigo-400 mb-2">💡 인사이트</h4>
-            <p className="text-sm text-indigo-900/70 font-medium leading-relaxed">
+            <h4 className="text-[15px] font-black uppercase text-indigo-400 mb-2">💡 인사이트</h4>
+            <p className="text-2xl text-indigo-900/70 font-medium leading-relaxed">
               관점/성향은 시대와 장소에 따라 상대적으로 해석됩니다. 당신의 생각은 특정 환경에서 가장 빛을 발할 수 있습니다.
             </p>
           </div>

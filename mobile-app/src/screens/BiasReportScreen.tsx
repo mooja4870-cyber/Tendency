@@ -78,17 +78,17 @@ export const BiasReportScreen: React.FC<BiasReportScreenProps> = ({ biasReport, 
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-display font-extrabold tracking-tight">인지편향 거울</h2>
+          <h2 className="text-6xl font-display font-extrabold tracking-tight">인지편향 거울</h2>
         </div>
 
         <div className="space-y-4">
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
-            <h3 className="text-lg font-display font-extrabold mb-4 flex items-center gap-2 tracking-tight">
-              <span className="text-2xl">🪞</span> 발견된 인지 편향
+            <h3 className="text-4xl font-display font-extrabold mb-4 flex items-center gap-2 tracking-tight">
+              <span className="text-6xl">🪞</span> 발견된 인지 편향
             </h3>
             <div className="mb-6">
-              <div className="text-[10px] font-bold text-black/30 uppercase mb-1">편향 수준</div>
-              <div className="inline-block px-2 py-1 rounded bg-red-50 text-red-600 text-[10px] font-bold">
+              <div className="text-[15px] font-bold text-black/30 uppercase mb-1">편향 수준</div>
+              <div className="inline-block px-2 py-1 rounded bg-red-50 text-red-600 text-[15px] font-bold">
                 {biasReport.overallBiasLevel}
               </div>
             </div>
@@ -96,36 +96,36 @@ export const BiasReportScreen: React.FC<BiasReportScreenProps> = ({ biasReport, 
               biasReport.detectedBiases.map((bias, i) => (
                 <div key={i} className="bg-red-50/50 p-4 rounded-xl mb-3 border border-red-100">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-lg">🔍</span>
+                    <span className="text-4xl">🔍</span>
                     <span className="font-bold text-red-900">{bias.title}</span>
                   </div>
-                  <p className="text-xs text-red-800/70 leading-relaxed mb-2">
+                  <p className="text-xl text-red-800/70 leading-relaxed mb-2">
                     {bias.description}
                   </p>
                   {bias.evidence && (
                     <div className="space-y-2 mb-3">
                       {bias.evidence.split('\n\n').map((ev: string, j: number) => (
-                        <p key={j} className="text-[11px] text-red-900/80 leading-relaxed bg-white/60 p-2.5 rounded-lg border border-red-100/50">
+                        <p key={j} className="text-[17px] text-red-900/80 leading-relaxed bg-white/60 p-2.5 rounded-lg border border-red-100/50">
                           📌 {ev}
                         </p>
                       ))}
                     </div>
                   )}
-                  <div className="bg-white/50 p-3 rounded-lg text-[11px] italic text-red-900/60">
+                  <div className="bg-white/50 p-3 rounded-lg text-[17px] italic text-red-900/60">
                     "{bias.quote}"
                   </div>
                 </div>
               ))
             ) : (
-              <div className="text-center py-10 text-black/40 text-sm">
+              <div className="text-center py-10 text-black/40 text-2xl">
                 탐지된 주요 편향이 없습니다. 매우 객관적인 답변 패턴을 보이셨습니다!
               </div>
             )}
 
             <div className="mt-8 pt-6 border-t border-black/10">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-xs font-bold text-black/60">답변 일관성</span>
-                <span className="text-xs font-bold text-black/60">
+                <span className="text-xl font-bold text-black/60">답변 일관성</span>
+                <span className="text-xl font-bold text-black/60">
                   {biasReport.consistencyScore >= 0.8 ? '높음' : biasReport.consistencyScore >= 0.5 ? '보통' : '낮음'}
                 </span>
               </div>
@@ -152,23 +152,23 @@ export const BiasReportScreen: React.FC<BiasReportScreenProps> = ({ biasReport, 
                 className="overflow-hidden"
               >
                 <div className="bg-white rounded-2xl p-6 shadow-sm border border-black/5 space-y-5">
-                  <h3 className="text-lg font-display font-extrabold flex items-center gap-2 tracking-tight">
-                    <span className="text-2xl">🧠</span> 편향의 심리학적 배경
+                  <h3 className="text-4xl font-display font-extrabold flex items-center gap-2 tracking-tight">
+                    <span className="text-6xl">🧠</span> 편향의 심리학적 배경
                   </h3>
                   {biasReport.detectedBiases.map((bias, i) => {
                     const info = BIAS_DEEP_INFO[bias.biasType];
                     if (!info) return null;
                     return (
                       <div key={i} className="bg-blue-50/50 p-4 rounded-xl border border-blue-100">
-                        <div className="font-bold text-sm text-blue-900 mb-2">
+                        <div className="font-bold text-2xl text-blue-900 mb-2">
                           📖 {bias.title}
                         </div>
-                        <p className="text-xs text-blue-900/70 leading-relaxed mb-3">
+                        <p className="text-xl text-blue-900/70 leading-relaxed mb-3">
                           {info.why}
                         </p>
                         <div className="bg-emerald-50 p-3 rounded-lg border border-emerald-100">
-                          <div className="text-[10px] font-bold text-emerald-700 mb-1">💡 실천 팁</div>
-                          <p className="text-xs text-emerald-800/80 leading-relaxed">
+                          <div className="text-[15px] font-bold text-emerald-700 mb-1">💡 실천 팁</div>
+                          <p className="text-xl text-emerald-800/80 leading-relaxed">
                             {info.tip}
                           </p>
                         </div>
@@ -183,13 +183,13 @@ export const BiasReportScreen: React.FC<BiasReportScreenProps> = ({ biasReport, 
           <div className="flex gap-3">
             <button
               onClick={handleShare}
-              className="flex-1 bg-white border border-black/10 h-12 rounded-xl text-sm font-bold shadow-sm active:scale-95 transition-transform"
+              className="flex-1 bg-white border border-black/10 h-12 rounded-xl text-2xl font-bold shadow-sm active:scale-95 transition-transform"
             >
               공유 카드 생성
             </button>
             <button
               onClick={() => setShowDeepInfo(prev => !prev)}
-              className={`flex-1 h-12 rounded-xl text-sm font-bold shadow-sm active:scale-95 transition-all ${showDeepInfo
+              className={`flex-1 h-12 rounded-xl text-2xl font-bold shadow-sm active:scale-95 transition-all ${showDeepInfo
                 ? 'bg-gray-600 text-white'
                 : 'bg-black text-white'
                 }`}
@@ -207,7 +207,7 @@ export const BiasReportScreen: React.FC<BiasReportScreenProps> = ({ biasReport, 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 40 }}
-            className="fixed bottom-24 left-1/2 -translate-x-1/2 bg-black/80 text-white text-sm font-medium px-5 py-3 rounded-full shadow-lg z-50"
+            className="fixed bottom-24 left-1/2 -translate-x-1/2 bg-black/80 text-white text-2xl font-medium px-5 py-3 rounded-full shadow-lg z-50"
           >
             {shareToast}
           </motion.div>

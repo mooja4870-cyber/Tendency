@@ -21,20 +21,20 @@ export const CompareResultScreen: React.FC<CompareResultScreenProps> = ({ compat
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-bold">궁합 분석 결과</h2>
+          <h2 className="text-6xl font-bold">궁합 분석 결과</h2>
         </div>
 
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-black/5 text-center">
-          <div className="text-5xl mb-4">💖</div>
-          <h3 className="text-sm font-bold text-black/40 uppercase tracking-widest mb-2">우리의 관계는</h3>
-          <h2 className="text-3xl font-black text-cta mb-6">"{compatibility.overallCompatibility}"</h2>
+          <div className="text-7xl mb-4">💖</div>
+          <h3 className="text-2xl font-bold text-black/40 uppercase tracking-widest mb-2">우리의 관계는</h3>
+          <h2 className="text-7xl font-black text-cta mb-6">"{compatibility.overallCompatibility}"</h2>
 
           <div className="space-y-6 text-left">
             <div>
-              <h4 className="text-[10px] font-black text-black/30 uppercase mb-3">공통된 가치관</h4>
+              <h4 className="text-[15px] font-black text-black/30 uppercase mb-3">공통된 가치관</h4>
               <div className="flex flex-wrap gap-2">
                 {compatibility.sharedValues.map((val, i) => (
-                  <span key={i} className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-bold">
+                  <span key={i} className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xl font-bold">
                     #{val}
                   </span>
                 ))}
@@ -42,10 +42,10 @@ export const CompareResultScreen: React.FC<CompareResultScreenProps> = ({ compat
             </div>
 
             <div>
-              <h4 className="text-[10px] font-black text-black/30 uppercase mb-3">차이가 있는 분야</h4>
+              <h4 className="text-[15px] font-black text-black/30 uppercase mb-3">차이가 있는 분야</h4>
               <div className="flex flex-wrap gap-2">
                 {compatibility.conflictAreas.map((val, i) => (
-                  <span key={i} className="px-3 py-1 bg-red-50 text-red-700 rounded-full text-xs font-bold">
+                  <span key={i} className="px-3 py-1 bg-red-50 text-red-700 rounded-full text-xl font-bold">
                     #{val}
                   </span>
                 ))}
@@ -53,12 +53,12 @@ export const CompareResultScreen: React.FC<CompareResultScreenProps> = ({ compat
             </div>
 
             <div className="p-4 bg-black/5 rounded-xl">
-              <h4 className="text-[10px] font-black uppercase text-black/30 mb-2">대화 가이드</h4>
+              <h4 className="text-[15px] font-black uppercase text-black/30 mb-2">대화 가이드</h4>
               <div className="space-y-3">
                 {compatibility.adviceList.map((advice, i) => (
                   <div key={i}>
-                    <div className="text-xs font-bold mb-1">📍 {advice.area}</div>
-                    <p className="text-xs text-black/60 leading-relaxed">{advice.advice}</p>
+                    <div className="text-xl font-bold mb-1">📍 {advice.area}</div>
+                    <p className="text-xl text-black/60 leading-relaxed">{advice.advice}</p>
                   </div>
                 ))}
               </div>

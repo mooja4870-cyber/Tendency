@@ -69,7 +69,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({ onComplete }) => {
     >
       <div className="max-w-md mx-auto w-full flex-1 flex flex-col">
         <div className="text-center mb-2">
-          <span className="text-sm font-medium text-[#666666]">
+          <span className="text-2xl font-medium text-[#666666]">
             Q{currentQuestionIndex + 1}/{QUESTIONS.length}
           </span>
         </div>
@@ -90,7 +90,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({ onComplete }) => {
             animate={{ scale: 1, opacity: 1 }}
             className="w-[120px] h-[120px] rounded-full bg-[#F5F5FF] flex items-center justify-center shadow-inner"
           >
-            <span className="text-5xl">{characterExpression}</span>
+            <span className="text-7xl">{characterExpression}</span>
           </motion.div>
         </div>
 
@@ -99,7 +99,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({ onComplete }) => {
           className="bg-white rounded-[20px] shadow-md p-7 mb-auto"
         >
           <div className="flex justify-center mb-3">
-            <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold ${CATEGORY_LABELS[QUESTIONS[currentQuestionIndex].category].color}`}>
+            <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[17px] font-bold ${CATEGORY_LABELS[QUESTIONS[currentQuestionIndex].category].color}`}>
               {CATEGORY_LABELS[QUESTIONS[currentQuestionIndex].category].emoji} {CATEGORY_LABELS[QUESTIONS[currentQuestionIndex].category].label}
             </span>
           </div>
@@ -133,13 +133,13 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({ onComplete }) => {
           <button
             onClick={handleBack}
             disabled={currentQuestionIndex === 0}
-            className={`text-sm font-medium py-2 px-4 transition-opacity ${currentQuestionIndex === 0 ? 'opacity-0' : 'opacity-60 hover:opacity-100'}`}
+            className={`text-2xl font-medium py-2 px-4 transition-opacity ${currentQuestionIndex === 0 ? 'opacity-0' : 'opacity-60 hover:opacity-100'}`}
           >
             ← 이전
           </button>
           <button
             onClick={() => handleAnswer(AnswerChoice.UNSURE)}
-            className="text-sm font-medium py-2 px-4 opacity-60 hover:opacity-100"
+            className="text-2xl font-medium py-2 px-4 opacity-60 hover:opacity-100"
           >
             건너뛰기 →
           </button>
@@ -156,8 +156,8 @@ function AnswerButton({ text, icon, color, onClick }: { text: string, icon: stri
       onClick={onClick}
       className={`${color} h-[72px] rounded-2xl flex flex-col items-center justify-center text-white shadow-sm active:scale-95 transition-transform`}
     >
-      <span className="text-2xl mb-1">{icon}</span>
-      <span className="text-sm font-bold">{text}</span>
+      <span className="text-6xl mb-1">{icon}</span>
+      <span className="text-2xl font-bold">{text}</span>
     </motion.button>
   );
 }

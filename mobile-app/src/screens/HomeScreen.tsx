@@ -67,13 +67,13 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
           className="bg-white rounded-[28px] p-6 shadow-xl shadow-purple-500/5 border border-purple-100 text-center"
         >
           <div className="flex flex-col items-center">
-            <div className="w-20 h-20 rounded-full bg-[#F0EAFF] flex items-center justify-center text-4xl mb-4">
+            <div className="w-20 h-20 rounded-full bg-[#F0EAFF] flex items-center justify-center text-6xl mb-4">
               🔮
             </div>
 
-            <h3 className="text-sm font-extrabold text-black/40 mb-1 tracking-tight">나의 관점/성향</h3>
+            <h3 className="text-2xl font-extrabold text-black/40 mb-1 tracking-tight">나의 관점/성향</h3>
             <h2
-              className="text-4xl font-display font-black mb-6 tracking-tight"
+              className="text-6xl font-display font-black mb-6 tracking-tight"
               style={{ color: getColorForLabel(result.overallLabel) }}
             >
               {result.overallLabel}
@@ -83,7 +83,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
 
             {result.figureMatches?.[0] && (
               <div className="mt-6 pt-4 border-t border-gray-50 w-full">
-                <p className="text-sm font-bold text-[#667EEA] flex items-center justify-center gap-1">
+                <p className="text-2xl font-bold text-[#667EEA] flex items-center justify-center gap-1">
                   <span>🎭</span> 닮은 인물: {result.figureMatches[0].figure.nameKorean}
                 </p>
               </div>
@@ -93,7 +93,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
 
         {/* Feature Grid Section */}
         <div className="space-y-4">
-          <h3 className="text-xl font-display font-extrabold text-black/80 px-1 tracking-tight">🔍 더 깊이 알아보기</h3>
+          <h3 className="text-5xl font-display font-extrabold text-black/80 px-1 tracking-tight">🔍 더 깊이 알아보기</h3>
 
           <div className="grid grid-cols-2 gap-3">
             <FeatureCard
@@ -160,14 +160,14 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
           <div className="flex gap-3">
             <button
               onClick={handleShare}
-              className="flex-1 bg-white border border-black/10 h-16 rounded-2xl flex items-center justify-center gap-2 font-bold text-sm shadow-sm active:scale-95 transition-transform"
+              className="flex-1 bg-white border border-black/10 h-16 rounded-2xl flex items-center justify-center gap-2 font-bold text-2xl shadow-sm active:scale-95 transition-transform"
             >
               <Share2 className="w-5 h-5" />
               결과 공유
             </button>
             <button
               onClick={reset}
-              className="flex-1 bg-black text-white h-16 rounded-2xl flex items-center justify-center gap-2 font-bold text-sm shadow-sm active:scale-95 transition-transform"
+              className="flex-1 bg-black text-white h-16 rounded-2xl flex items-center justify-center gap-2 font-bold text-2xl shadow-sm active:scale-95 transition-transform"
             >
               <RotateCcw className="w-5 h-5" />
               다시하기
@@ -176,7 +176,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
 
           <button
             onClick={handleEnableNotifications}
-            className="w-full bg-[#F0EAFF] text-[#667EEA] h-12 rounded-xl flex items-center justify-center gap-2 font-bold text-xs active:scale-95 transition-transform"
+            className="w-full bg-[#F0EAFF] text-[#667EEA] h-12 rounded-xl flex items-center justify-center gap-2 font-bold text-xl active:scale-95 transition-transform"
           >
             <Bell className="w-4 h-4" />
             주간 토론 알림 받기
@@ -203,12 +203,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ emoji, title, subtitle, color
       onClick={onClick}
       className={`${color} bg-opacity-15 rounded-[20px] p-4 text-center flex flex-col items-center justify-between min-h-[130px] border border-white shadow-sm active:scale-95 transition-transform`}
     >
-      <div className="text-3xl">{emoji}</div>
+      <div className="text-7xl">{emoji}</div>
       <div>
-        <h4 className="font-black text-[15px] leading-tight whitespace-pre-line mb-1 text-black/80">
+        <h4 className="font-black text-[22px] leading-tight whitespace-pre-line mb-1 text-black/80">
           {title.replace('\\n', '\n')}
         </h4>
-        <p className="text-[11px] font-bold text-black/40">
+        <p className="text-[17px] font-bold text-black/40">
           {subtitle}
         </p>
       </div>
@@ -219,7 +219,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ emoji, title, subtitle, color
 function SpectrumBar({ position, leftLabel, rightLabel }: { position: number, leftLabel: string, rightLabel: string }) {
   return (
     <div className="w-full">
-      <div className="flex justify-between text-[10px] font-black uppercase tracking-widest mb-2 px-1">
+      <div className="flex justify-between text-[15px] font-black uppercase tracking-widest mb-2 px-1">
         <span className="text-[#1B3A6B] opacity-60">{leftLabel}</span>
         <span className="text-[#D97B4A] opacity-60">{rightLabel}</span>
       </div>

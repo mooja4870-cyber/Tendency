@@ -58,7 +58,7 @@ export const FigureMatchScreen: React.FC<FigureMatchScreenProps> = ({ matches, o
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-display font-extrabold tracking-tight">역사인물 매칭</h2>
+          <h2 className="text-6xl font-display font-extrabold tracking-tight">역사인물 매칭</h2>
         </div>
 
         <div className="space-y-4">
@@ -71,7 +71,7 @@ export const FigureMatchScreen: React.FC<FigureMatchScreenProps> = ({ matches, o
               className={`${i === 0 ? 'bg-white p-8' : 'bg-white p-6'} rounded-2xl shadow-sm border border-black/5 text-center`}
             >
               {/* Rank Badge */}
-              <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black mb-4 ${i === 0 ? 'bg-amber-100 text-amber-700' : 'bg-black/5 text-black/40'
+              <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[15px] font-black mb-4 ${i === 0 ? 'bg-amber-100 text-amber-700' : 'bg-black/5 text-black/40'
                 }`}>
                 {i === 0 ? '🏆' : `${i + 1}위`} {i === 0 ? '가장 닮은 인물' : '유사 인물'}
               </div>
@@ -82,13 +82,13 @@ export const FigureMatchScreen: React.FC<FigureMatchScreenProps> = ({ matches, o
                 className={`${i === 0 ? 'w-32 h-32' : 'w-24 h-24'} mx-auto mb-4 rounded-full shadow-md object-cover border-4 border-white`}
                 referrerPolicy="no-referrer"
               />
-              <h3 className={`${i === 0 ? 'text-2xl' : 'text-xl'} font-black mb-1`}>{match.figure.nameKorean}</h3>
-              <p className="text-cta text-sm font-bold mb-4">{match.figure.shortDescription}</p>
+              <h3 className={`${i === 0 ? 'text-6xl' : 'text-5xl'} font-black mb-1`}>{match.figure.nameKorean}</h3>
+              <p className="text-cta text-2xl font-bold mb-4">{match.figure.shortDescription}</p>
 
               {/* Tags - for ALL figures */}
               <div className="flex flex-wrap justify-center gap-2 mb-5">
                 {match.commonTraits.map((trait, j) => (
-                  <span key={j} className="px-2 py-1 bg-black/5 rounded text-[10px] font-bold text-black/60">
+                  <span key={j} className="px-2 py-1 bg-black/5 rounded text-[15px] font-bold text-black/60">
                     #{trait}
                   </span>
                 ))}
@@ -96,12 +96,12 @@ export const FigureMatchScreen: React.FC<FigureMatchScreenProps> = ({ matches, o
 
               {/* Match Reason - for ALL figures */}
               <div className="p-4 bg-black/[0.03] rounded-xl text-left mb-4">
-                <h4 className="text-[10px] font-black uppercase text-black/30 mb-1">매칭 이유</h4>
-                <p className="text-sm leading-relaxed">{match.matchReason}</p>
+                <h4 className="text-[15px] font-black uppercase text-black/30 mb-1">매칭 이유</h4>
+                <p className="text-2xl leading-relaxed">{match.matchReason}</p>
               </div>
 
               {/* Famous Quote - for ALL figures */}
-              <div className="italic text-xs text-black/40 px-4">
+              <div className="italic text-xl text-black/40 px-4">
                 "{match.figure.famousQuote}"
               </div>
             </motion.div>
@@ -123,7 +123,7 @@ export const FigureMatchScreen: React.FC<FigureMatchScreenProps> = ({ matches, o
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
-            className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-black/90 text-white px-6 py-3 rounded-full text-sm font-bold shadow-xl z-50"
+            className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-black/90 text-white px-6 py-3 rounded-full text-2xl font-bold shadow-xl z-50"
           >
             {toast}
           </motion.div>

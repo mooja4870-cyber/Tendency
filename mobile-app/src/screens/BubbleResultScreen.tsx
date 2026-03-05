@@ -36,20 +36,20 @@ export const BubbleResultScreen: React.FC<BubbleResultScreenProps> = ({ report, 
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-bold">진단 결과</h2>
+          <h2 className="text-6xl font-bold">진단 결과</h2>
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
           <div className="flex justify-between items-end mb-8">
             <div>
-              <h3 className="text-[10px] font-black text-black/30 uppercase tracking-widest mb-1">필터버블 지수</h3>
-              <div className="text-4xl font-black text-cta">
+              <h3 className="text-[15px] font-black text-black/30 uppercase tracking-widest mb-1">필터버블 지수</h3>
+              <div className="text-6xl font-black text-cta">
                 {report.diversityLevel}
               </div>
             </div>
             <div className="text-right">
-              <div className="text-[10px] font-black text-black/30 uppercase mb-2">정보 다양성</div>
-              <div className="inline-block px-2 py-1 bg-black/5 rounded text-[10px] font-bold">
+              <div className="text-[15px] font-black text-black/30 uppercase mb-2">정보 다양성</div>
+              <div className="inline-block px-2 py-1 bg-black/5 rounded text-[15px] font-bold">
                 {report.diversityPosition > 0.7 ? '매우 높음' : report.diversityPosition > 0.4 ? '보통' : '낮음'}
               </div>
             </div>
@@ -57,32 +57,32 @@ export const BubbleResultScreen: React.FC<BubbleResultScreenProps> = ({ report, 
 
           <div className="space-y-6">
             <div>
-              <h4 className="text-[10px] font-black text-black/30 uppercase mb-3">구독 중인 매체 성향</h4>
+              <h4 className="text-[15px] font-black text-black/30 uppercase mb-3">구독 중인 매체 성향</h4>
               <div className="h-3 w-full bg-black/5 rounded-full overflow-hidden flex">
                 <div className="h-full bg-cons-deep" style={{ width: `${report.conservativeRatio * 100}%` }} />
                 <div className="h-full bg-prog-deep" style={{ width: `${report.progressiveRatio * 100}%` }} />
               </div>
-              <div className="flex justify-between mt-2 text-[10px] font-bold">
+              <div className="flex justify-between mt-2 text-[15px] font-bold">
                 <span className="text-cons-deep">보수 성향 매체</span>
                 <span className="text-prog-deep">진보 성향 매체</span>
               </div>
             </div>
 
             <div className="p-4 bg-black/5 rounded-xl">
-              <h4 className="text-[10px] font-black uppercase text-black/30 mb-2">진단 결과</h4>
-              <p className="text-sm font-medium leading-relaxed">{report.prescription}</p>
+              <h4 className="text-[15px] font-black uppercase text-black/30 mb-2">진단 결과</h4>
+              <p className="text-2xl font-medium leading-relaxed">{report.prescription}</p>
             </div>
 
             <div>
-              <h4 className="text-[10px] font-black text-black/30 uppercase mb-3">추천 매체 (균형 잡기)</h4>
+              <h4 className="text-[15px] font-black text-black/30 uppercase mb-3">추천 매체 (균형 잡기)</h4>
               <div className="space-y-2">
                 {report.recommendedMedia.map(media => (
                   <div key={media.id} className="flex items-center justify-between p-3 bg-white border border-black/5 rounded-xl">
                     <div className="flex items-center gap-3">
-                      <span className="text-xl">{media.logoEmoji}</span>
-                      <span className="text-sm font-bold">{media.name}</span>
+                      <span className="text-5xl">{media.logoEmoji}</span>
+                      <span className="text-2xl font-bold">{media.name}</span>
                     </div>
-                    <span className="text-[10px] font-bold text-black/40">{media.type}</span>
+                    <span className="text-[15px] font-bold text-black/40">{media.type}</span>
                   </div>
                 ))}
               </div>
@@ -107,8 +107,8 @@ export const BubbleResultScreen: React.FC<BubbleResultScreenProps> = ({ report, 
             >
               <div className="bg-white rounded-2xl p-5 shadow-sm border border-black/5 space-y-4">
                 <div>
-                  <h4 className="text-sm font-black mb-1">🎯 오늘의 미션</h4>
-                  <p className="text-[11px] text-black/40">하루에 하나씩 실천해보세요!</p>
+                  <h4 className="text-2xl font-black mb-1">🎯 오늘의 미션</h4>
+                  <p className="text-[17px] text-black/40">하루에 하나씩 실천해보세요!</p>
                 </div>
                 <div className="space-y-2">
                   {CHALLENGES.map(ch => (
@@ -124,15 +124,15 @@ export const BubbleResultScreen: React.FC<BubbleResultScreenProps> = ({ report, 
                         ? <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
                         : <Circle className="w-5 h-5 text-black/20 flex-shrink-0" />
                       }
-                      <span className="text-sm mr-1">{ch.emoji}</span>
-                      <span className={`text-xs font-medium ${completed.includes(ch.id) ? 'line-through text-black/30' : ''}`}>
+                      <span className="text-2xl mr-1">{ch.emoji}</span>
+                      <span className={`text-xl font-medium ${completed.includes(ch.id) ? 'line-through text-black/30' : ''}`}>
                         {ch.text}
                       </span>
                     </button>
                   ))}
                 </div>
                 <div className="text-center pt-2">
-                  <p className="text-[11px] font-bold text-black/30">
+                  <p className="text-[17px] font-bold text-black/30">
                     {completed.length}/{CHALLENGES.length} 완료 🔥
                   </p>
                 </div>

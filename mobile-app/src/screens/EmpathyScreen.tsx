@@ -22,11 +22,11 @@ export const EmpathyScreen: React.FC<EmpathyScreenProps> = ({ scenarios, onSelec
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-display font-extrabold tracking-tight">반대편의 눈</h2>
+          <h2 className="text-6xl font-display font-extrabold tracking-tight">반대편의 눈</h2>
         </div>
 
         <div className="space-y-3">
-          <p className="text-sm text-black/40 font-bold px-1 mb-2">시나리오를 선택하여 반대편의 시각을 확인해보세요.</p>
+          <p className="text-2xl text-black/40 font-bold px-1 mb-2">시나리오를 선택하여 반대편의 시각을 확인해보세요.</p>
           {scenarios.map(scenario => (
             <motion.button
               key={scenario.id}
@@ -37,7 +37,7 @@ export const EmpathyScreen: React.FC<EmpathyScreenProps> = ({ scenarios, onSelec
             >
               <div className="flex-1 pr-4">
                 <div className="inline-block bg-red-500 text-white px-2 py-0.5 rounded text-[8px] font-black mb-2">HOT</div>
-                <h3 className="text-sm font-bold leading-tight group-hover:text-cta transition-colors">{scenario.newsHeadline}</h3>
+                <h3 className="text-2xl font-bold leading-tight group-hover:text-cta transition-colors">{scenario.newsHeadline}</h3>
               </div>
               <ChevronRight className="w-5 h-5 text-black/20 group-hover:text-cta transition-colors" />
             </motion.button>

@@ -38,12 +38,12 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
         <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
           <ChevronLeft className="w-6 h-6" />
         </button>
-        <h2 className="text-2xl font-display font-extrabold tracking-tight">상세 분석 보고서</h2>
+        <h2 className="text-6xl font-display font-extrabold tracking-tight">상세 분석 보고서</h2>
       </div>
 
       {/* Category Analysis Card */}
       <div className="bg-white rounded-[20px] p-6 shadow-md">
-        <h3 className="text-lg font-display font-extrabold mb-6 flex items-center gap-2 tracking-tight">
+        <h3 className="text-4xl font-display font-extrabold mb-6 flex items-center gap-2 tracking-tight">
           📊 항목별 성향 분석
         </h3>
         <div className="space-y-6">
@@ -62,9 +62,9 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
             return (
               <div key={cat.category} className="space-y-2">
                 <div className="flex flex-col items-center gap-1">
-                  <span className="text-sm font-semibold">{categoryInfo}</span>
+                  <span className="text-2xl font-semibold">{categoryInfo}</span>
                   <span
-                    className="text-xs font-bold"
+                    className="text-xl font-bold"
                     style={{ color: getColorForLabel(cat.label) }}
                   >
                     {cat.label}
@@ -83,7 +83,7 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
 
       {/* Moral Foundation Card */}
       <div className="bg-white rounded-[20px] p-6 shadow-md text-center">
-        <h3 className="text-lg font-display font-extrabold mb-6 tracking-tight">🧠 도덕적 기반 프로필</h3>
+        <h3 className="text-4xl font-display font-extrabold mb-6 tracking-tight">🧠 도덕적 기반 프로필</h3>
         <div className="flex justify-center">
           <RadarChart profile={result.moralProfile} />
         </div>
@@ -91,12 +91,12 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
 
       {/* Insight Card */}
       <div className="bg-[#F5F0FF] rounded-[20px] p-6 shadow-md flex gap-4">
-        <div className="w-14 h-14 rounded-full bg-[#E8E0F0] flex items-center justify-center text-3xl shrink-0">
+        <div className="w-14 h-14 rounded-full bg-[#E8E0F0] flex items-center justify-center text-7xl shrink-0">
           🧑‍🏫
         </div>
         <div className="space-y-2">
-          <h4 className="font-display font-extrabold text-base tracking-tight">나의 성향 해석</h4>
-          <p className="text-sm leading-relaxed text-[#444444] whitespace-pre-wrap">
+          <h4 className="font-display font-extrabold text-3xl tracking-tight">나의 성향 해석</h4>
+          <p className="text-2xl leading-relaxed text-[#444444] whitespace-pre-wrap">
             {result.personalityInsight}
           </p>
         </div>
@@ -104,12 +104,12 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
 
       {/* Info Links Card */}
       <div className="bg-white rounded-[20px] p-6 shadow-md">
-        <h4 className="text-sm font-bold mb-4">학술적 배경 및 참고 자료</h4>
+        <h4 className="text-2xl font-bold mb-4">학술적 배경 및 참고 자료</h4>
         <div className="space-y-3">
-          <a href="https://en.wikipedia.org/wiki/Moral_foundations_theory" target="_blank" rel="noopener noreferrer" className="w-full text-left text-xs text-cta hover:underline flex items-center gap-2">
+          <a href="https://en.wikipedia.org/wiki/Moral_foundations_theory" target="_blank" rel="noopener noreferrer" className="w-full text-left text-xl text-cta hover:underline flex items-center gap-2">
             <Info className="w-4 h-4" /> 도덕적 기반 이론 (Moral Foundations Theory)
           </a>
-          <a href="https://en.wikipedia.org/wiki/Political_psychology" target="_blank" rel="noopener noreferrer" className="w-full text-left text-xs text-cta hover:underline flex items-center gap-2">
+          <a href="https://en.wikipedia.org/wiki/Political_psychology" target="_blank" rel="noopener noreferrer" className="w-full text-left text-xl text-cta hover:underline flex items-center gap-2">
             <Search className="w-4 h-4" /> 정치 심리학과 성격 특성 연구
           </a>
         </div>
@@ -131,7 +131,7 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
 function SpectrumBar({ position, leftLabel, rightLabel }: { position: number, leftLabel: string, rightLabel: string }) {
   return (
     <div className="w-full">
-      <div className="flex justify-between text-[10px] font-bold uppercase tracking-tighter mb-1">
+      <div className="flex justify-between text-[15px] font-bold uppercase tracking-tighter mb-1">
         <span className="text-[#1B3A6B]">{leftLabel}</span>
         <span className="text-[#D97B4A]">{rightLabel}</span>
       </div>

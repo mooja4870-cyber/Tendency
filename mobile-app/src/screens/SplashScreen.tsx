@@ -68,8 +68,8 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onTimeout }) => {
         transition={{ delay: 1.2 }}
         className="mt-12 text-center"
       >
-        <h1 className="text-5xl font-serif italic tracking-tight mb-2">PoliTest</h1>
-        <p className="text-[10px] uppercase tracking-[0.5em] opacity-40 font-bold">Discover Your Bias</p>
+        <h1 className="text-7xl font-serif italic tracking-tight mb-2">PoliTest</h1>
+        <p className="text-[15px] uppercase tracking-[0.5em] opacity-40 font-bold">Discover Your Bias</p>
       </motion.div>
     </motion.div>
   );

@@ -26,12 +26,12 @@ export const BubbleScreen: React.FC<BubbleScreenProps> = ({ onAnalyze, onBack })
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-bold">필터 버블 진단</h2>
+          <h2 className="text-6xl font-bold">필터 버블 진단</h2>
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
-          <h3 className="text-lg font-bold mb-2">선호하는 매체를 선택해주세요</h3>
-          <p className="text-xs text-black/40 mb-6">당신의 정보 환경을 분석하여 필터버블을 진단합니다.</p>
+          <h3 className="text-4xl font-bold mb-2">선호하는 매체를 선택해주세요</h3>
+          <p className="text-xl text-black/40 mb-6">당신의 정보 환경을 분석하여 필터버블을 진단합니다.</p>
 
           <div className="space-y-6">
             {[
@@ -40,7 +40,7 @@ export const BubbleScreen: React.FC<BubbleScreenProps> = ({ onAnalyze, onBack })
               { title: '온라인/기타', type: MediaType.ONLINE }
             ].map(group => (
               <div key={group.title}>
-                <h4 className="text-[10px] font-black text-black/30 uppercase mb-3">{group.title}</h4>
+                <h4 className="text-[15px] font-black text-black/30 uppercase mb-3">{group.title}</h4>
                 <div className="grid grid-cols-2 gap-2">
                   {bubbleAnalyzer.getAllMedia().filter(m => m.type === group.type).map(media => (
                     <button
@@ -52,7 +52,7 @@ export const BubbleScreen: React.FC<BubbleScreenProps> = ({ onAnalyze, onBack })
                             : [...prev, media.id]
                         );
                       }}
-                      className={`p-3 rounded-xl border text-xs font-bold transition-all ${selectedMediaIds.includes(media.id)
+                      className={`p-3 rounded-xl border text-xl font-bold transition-all ${selectedMediaIds.includes(media.id)
                         ? 'bg-black text-white border-black'
                         : 'bg-white border-black/5 hover:border-black/20'
                         }`}

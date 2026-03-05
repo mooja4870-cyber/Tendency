@@ -24,7 +24,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) =
             <motion.p
               animate={{ opacity: [0.4, 1, 0.4] }}
               transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-              className="text-center text-[36px] font-black text-cta mb-3 tracking-tight"
+              className="text-center text-[54px] font-black text-cta mb-3 tracking-tight"
             >
               "1분 완성"
             </motion.p>
@@ -46,19 +46,19 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) =
               {onboardingIndex === 0 && (
                 <>
                   <div className="inline-flex flex-col items-center bg-[#A41034]/10 border border-[#A41034]/20 rounded-2xl px-5 py-2.5 mb-5">
-                    <span className="text-xl mb-0.5">🎓</span>
-                    <span className="text-[11px] font-black text-[#A41034] tracking-tight">Harvard University</span>
-                    <span className="text-[11px] font-black text-[#A41034] tracking-tight">연구 기반</span>
+                    <span className="text-5xl mb-0.5">🎓</span>
+                    <span className="text-[17px] font-black text-[#A41034] tracking-tight">Harvard University</span>
+                    <span className="text-[17px] font-black text-[#A41034] tracking-tight">연구 기반</span>
                   </div>
-                  <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight">
+                  <h2 className="text-6xl font-display font-extrabold leading-tight mb-4 tracking-tight">
                     나도 몰랐던 <br />
                     나의 <span className="gradient-text-warm">관점·성향</span>을 <br />
                     발견하세요 !
                   </h2>
-                  <p className="text-base text-[#666666] leading-relaxed mb-3" style={{ textWrap: 'balance' }}>
+                  <p className="text-3xl text-[#666666] leading-relaxed mb-3" style={{ textWrap: 'balance' }}>
                     30개의 질문을 통해 당신의 관점·성향을 정밀하게 분석합니다.
                   </p>
-                  <p className="text-xs text-[#999999] leading-relaxed" style={{ textWrap: 'balance' }}>
+                  <p className="text-xl text-[#999999] leading-relaxed" style={{ textWrap: 'balance' }}>
                     본 진단은 미국 하버드 대학교 Jonathan Haidt 교수의
                     <span className="font-bold text-[#777777]"> Moral Foundations Theory</span>(도덕적 기반 이론)
                     연구 결과를 근거로 설계되었습니다.
@@ -67,24 +67,24 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) =
               )}
               {onboardingIndex === 1 && (
                 <>
-                  <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight" style={{ textWrap: 'balance' }}>
+                  <h2 className="text-6xl font-display font-extrabold leading-tight mb-4 tracking-tight" style={{ textWrap: 'balance' }}>
                     <span className="gradient-text-cool">도덕적 기반</span> <br />
                     이론에 근거한 <br />
                     심층 분석
                   </h2>
-                  <p className="text-base text-center-deep leading-relaxed" style={{ textWrap: 'balance' }}>
+                  <p className="text-3xl text-center-deep leading-relaxed" style={{ textWrap: 'balance' }}>
                     단순한 보수/진보를 넘어 5가지 도덕적 가치를 측정합니다.
                   </p>
                 </>
               )}
               {onboardingIndex === 2 && (
                 <>
-                  <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight" style={{ textWrap: 'balance' }}>
+                  <h2 className="text-6xl font-display font-extrabold leading-tight mb-4 tracking-tight" style={{ textWrap: 'balance' }}>
                     나와 닮은 <br />
                     <span className="gradient-text-sunset">캐릭터</span>와 <br />
                     함께 확인하세요
                   </h2>
-                  <p className="text-base text-center-deep leading-relaxed" style={{ textWrap: 'balance' }}>
+                  <p className="text-3xl text-center-deep leading-relaxed" style={{ textWrap: 'balance' }}>
                     분석 결과에 따른 맞춤형 캐릭터와 피드백을 제공합니다.
                   </p>
                 </>

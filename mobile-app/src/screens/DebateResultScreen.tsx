@@ -22,16 +22,16 @@ export const DebateResultScreen: React.FC<DebateResultScreenProps> = ({ topic, u
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-bold">투표 결과</h2>
+          <h2 className="text-6xl font-bold">투표 결과</h2>
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
-          <h3 className="text-xl font-bold mb-6 leading-tight">{topic.title}</h3>
+          <h3 className="text-5xl font-bold mb-6 leading-tight">{topic.title}</h3>
 
           <div className="space-y-6">
             <div className="space-y-4">
               <div>
-                <div className="flex justify-between text-[10px] font-bold mb-1">
+                <div className="flex justify-between text-[15px] font-bold mb-1">
                   <span>찬성</span>
                   <span>다수 의견</span>
                 </div>
@@ -40,7 +40,7 @@ export const DebateResultScreen: React.FC<DebateResultScreenProps> = ({ topic, u
                 </div>
               </div>
               <div>
-                <div className="flex justify-between text-[10px] font-bold mb-1">
+                <div className="flex justify-between text-[15px] font-bold mb-1">
                   <span>반대</span>
                   <span>소수 의견</span>
                 </div>
@@ -51,12 +51,12 @@ export const DebateResultScreen: React.FC<DebateResultScreenProps> = ({ topic, u
             </div>
 
             <div className="p-4 bg-black/5 rounded-xl">
-              <h4 className="text-[10px] font-black uppercase text-black/30 mb-1">나의 선택: {userVote === DebateChoice.AGREE ? '찬성' : userVote === DebateChoice.DISAGREE ? '반대' : '중립'}</h4>
-              <h4 className="text-[10px] font-black uppercase text-black/30 mb-1 mt-4">인사이트</h4>
-              <p className="text-xs font-medium leading-relaxed">당신의 성향 그룹은 대체로 '찬성'에 더 높은 지지를 보였습니다. 이는 기술 혁신에 대한 긍정적 태도를 반영합니다.</p>
+              <h4 className="text-[15px] font-black uppercase text-black/30 mb-1">나의 선택: {userVote === DebateChoice.AGREE ? '찬성' : userVote === DebateChoice.DISAGREE ? '반대' : '중립'}</h4>
+              <h4 className="text-[15px] font-black uppercase text-black/30 mb-1 mt-4">인사이트</h4>
+              <p className="text-xl font-medium leading-relaxed">당신의 성향 그룹은 대체로 '찬성'에 더 높은 지지를 보였습니다. 이는 기술 혁신에 대한 긍정적 태도를 반영합니다.</p>
             </div>
 
-            <button className="w-full bg-black text-white h-12 rounded-xl text-sm font-bold shadow-sm active:scale-95 transition-transform">
+            <button className="w-full bg-black text-white h-12 rounded-xl text-2xl font-bold shadow-sm active:scale-95 transition-transform">
               결과 공유하기
             </button>
           </div>

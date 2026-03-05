@@ -81,13 +81,13 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
           <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl font-bold">관계 궁합</h2>
+          <h2 className="text-6xl font-bold">관계 궁합</h2>
         </div>
 
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-black/5 text-center py-10">
-          <div className="text-5xl mb-4">🤝</div>
-          <h3 className="text-xl font-bold mb-2">친구 초대하기</h3>
-          <p className="text-sm text-black/40 mb-8">친구와 관점/성향 궁합을 확인해보세요!</p>
+          <div className="text-7xl mb-4">🤝</div>
+          <h3 className="text-5xl font-bold mb-2">친구 초대하기</h3>
+          <p className="text-2xl text-black/40 mb-8">친구와 관점/성향 궁합을 확인해보세요!</p>
 
           <div className="space-y-5">
             <div className="space-y-2">
@@ -97,7 +97,7 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
               >
                 <MessageCircle className="w-5 h-5 fill-current" /> 카카오톡 초대
               </button>
-              <p className="text-[11px] text-black/40 leading-relaxed px-2">
+              <p className="text-[17px] text-black/40 leading-relaxed px-2">
                 카카오톡 공유 SDK를 통해 초대 링크/메시지를 친구에게 전송합니다. 친구가 링크를 클릭 → 테스트 완료 → 두 사람의 결과를 비교합니다.
               </p>
             </div>
@@ -109,7 +109,7 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
               >
                 <QrCode className="w-5 h-5" /> QR 코드 생성
               </button>
-              <p className="text-[11px] text-black/40 leading-relaxed px-2">
+              <p className="text-[17px] text-black/40 leading-relaxed px-2">
                 고유 초대 링크가 담긴 QR 코드를 화면에 표시합니다. 친구가 QR 코드를 스캔해 테스트에 참여할 수 있습니다.
               </p>
             </div>
@@ -121,7 +121,7 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
               >
                 <Link2 className="w-5 h-5" /> 링크 복사
               </button>
-              <p className="text-[11px] text-black/40 leading-relaxed px-2">
+              <p className="text-[17px] text-black/40 leading-relaxed px-2">
                 고유 초대 URL을 클립보드에 복사합니다. 어떤 메신저로든 직접 공유할 수 있습니다.
               </p>
             </div>
@@ -129,8 +129,8 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
         </div>
 
         <div className="p-6 bg-black/5 rounded-2xl">
-          <h4 className="text-[10px] font-black uppercase text-black/30 mb-2">어떻게 작동하나요?</h4>
-          <p className="text-xs text-black/60 leading-relaxed">
+          <h4 className="text-[15px] font-black uppercase text-black/30 mb-2">어떻게 작동하나요?</h4>
+          <p className="text-xl text-black/60 leading-relaxed">
             친구가 링크를 통해 테스트를 완료하면, 두 사람의 성향 차이를 분석하여 대화 가이드와 궁합 리포트를 제공합니다.
           </p>
         </div>
@@ -154,7 +154,7 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-lg font-bold">QR 코드</h3>
+                <h3 className="text-4xl font-bold">QR 코드</h3>
                 <button
                   onClick={() => setShowQR(false)}
                   className="p-1 hover:bg-black/5 rounded-full transition-colors"
@@ -171,7 +171,7 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
                 />
               </div>
 
-              <p className="text-sm text-black/50 mb-4">
+              <p className="text-2xl text-black/50 mb-4">
                 친구가 이 QR 코드를 스캔하면<br />테스트에 참여할 수 있습니다
               </p>
 
@@ -196,7 +196,7 @@ export const InviteScreen: React.FC<InviteScreenProps> = ({ onBack }) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
-            className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-black/90 text-white px-6 py-3 rounded-full text-sm font-bold shadow-xl z-[60]"
+            className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-black/90 text-white px-6 py-3 rounded-full text-2xl font-bold shadow-xl z-[60]"
           >
             {toast}
           </motion.div>
