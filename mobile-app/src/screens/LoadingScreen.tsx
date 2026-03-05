@@ -39,7 +39,9 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onFinish }) => {
           🔍
         </motion.div>
       </div>
-      <h2 className="text-6xl font-black mb-2">당신의 성향을 분석 중입니다</h2>
+      <h2 className="text-[40px] font-black mb-4 leading-tight">
+        당신의 성향을<br />분석 중입니다
+      </h2>
       <p className="text-black/40 font-bold mb-10">7가지 렌즈로 당신의 답변을 다각도로 분석하고 있어요...</p>
 
       <div className="w-48 h-1.5 bg-black/5 rounded-full overflow-hidden">
