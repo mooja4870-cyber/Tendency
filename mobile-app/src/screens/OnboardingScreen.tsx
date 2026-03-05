@@ -95,20 +95,29 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) =
       </div>
 
       {/* 하단 버튼 - 항상 보이도록 shrink-0 */}
-      <div className="shrink-0 pb-2 pt-3">
+      <div className="shrink-0 pb-2 pt-3 flex gap-3">
+        {onboardingIndex > 0 && (
+          <button
+            onClick={() => setOnboardingIndex(prev => prev - 1)}
+            className="flex-1 bg-black/5 text-black/60 rounded-full py-4 flex items-center justify-center gap-1 font-bold active:scale-95 transition-transform"
+          >
+            ⬅️ 이전
+          </button>
+        )}
+
         {onboardingIndex < 2 ? (
           <button
             onClick={() => setOnboardingIndex(prev => prev + 1)}
-            className="w-full bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20"
+            className="flex-[2] bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20 active:scale-95 transition-transform"
           >
-            다음으로
+            다음으로 ➡️
           </button>
         ) : (
           <button
             onClick={onStart}
-            className="w-full bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20"
+            className="flex-[2] bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20 active:scale-95 transition-transform"
           >
-            진단 시작하기 <Play className="w-4 h-4 fill-current" />
+            진단 시작하기 🚀
           </button>
         )}
       </div>
