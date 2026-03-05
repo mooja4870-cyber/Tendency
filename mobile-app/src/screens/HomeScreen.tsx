@@ -96,75 +96,75 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
           <h3 className="text-5xl font-display font-extrabold text-black/80 px-1 tracking-tight">🔍 더 깊이 알아보기</h3>
 
           <div className="grid grid-cols-2 gap-3">
-            {/* 상세 분석 - 와이드형 (상단 배치) */}
+            {/* 상세 분석 - 와이드형 (상단 배치, 높이 축소) */}
             <motion.button
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => onNavigate('/detail')}
-              className="col-span-2 bg-[#B8E6CF] bg-opacity-20 rounded-[20px] px-6 py-4 flex items-center justify-between border border-white shadow-sm active:scale-95 transition-transform h-[85px]"
+              className="col-span-2 bg-[#B8E6CF] bg-opacity-20 rounded-[20px] px-6 py-3 flex items-center justify-between border border-white shadow-sm active:scale-95 transition-transform h-[70px]"
             >
               <div className="flex items-center gap-4">
-                <div className="text-6xl">📊</div>
+                <div className="text-5xl">📊</div>
                 <div className="text-left">
                   <h4 className="font-black text-[22px] leading-tight text-black/80">상세 분석</h4>
-                  <p className="text-[17px] font-bold text-black/40 text-left">항목별·도덕기반</p>
+                  <p className="text-[17px] font-bold text-black/40">항목별·도덕기반</p>
                 </div>
               </div>
             </motion.button>
 
             <FeatureCard
               emoji="🪞"
-              title="인지편향\n거울"
-              subtitle={`${result.biasReport.detectedBiases.length}개 편향 발견`}
+              title="인지편향 거울"
+              subtitle={`${result.biasReport.detectedBiases.length}개 발견`}
               color="bg-[#FF6B6B]"
               onClick={() => onNavigate('/bias')}
             />
             <FeatureCard
               emoji="👁️"
-              title="반대편의\n눈"
+              title="반대편의 눈"
               subtitle="공감 시뮬레이터"
               color="bg-[#4ECDC4]"
               onClick={() => onNavigate('/empathy')}
             />
             <FeatureCard
               emoji="🌍"
-              title="시대·국가\n매칭"
-              subtitle="다른 나라에선 나는?"
+              title="시대·국가 매칭"
+              subtitle="다른 나라에선?"
               color="bg-[#45B7D1]"
               onClick={() => onNavigate('/time-match')}
             />
             <FeatureCard
               emoji="💕"
-              title="관계\n궁합"
-              subtitle="친구와 비교해보기"
+              title="관계 궁합"
+              subtitle="친구와 비교"
               color="bg-[#F38181]"
               onClick={() => onNavigate('/invite')}
             />
             <FeatureCard
               emoji="🫧"
-              title="필터버블\n진단"
-              subtitle="나의 정보 편식은?"
+              title="필터버블 진단"
+              subtitle="나의 정보 편식"
               color="bg-[#AA96DA]"
               onClick={() => onNavigate('/bubble')}
             />
             <FeatureCard
               emoji="🗳️"
-              title="주간\n토론"
-              subtitle="이번 주 이슈 투표"
+              title="주간 토론"
+              subtitle="이번 주 이슈"
               color="bg-[#FFE66D]"
               onClick={() => onNavigate('/debate')}
             />
             <FeatureCard
               emoji="🎭"
-              title="역사인물\n매칭"
-              subtitle="나와 닮은 인물은?"
+              title="역사인물 매칭"
+              subtitle="나와 닮은 인물"
               color="bg-[#A8D8EA]"
               onClick={() => onNavigate('/figure-match')}
             />
             {/* 결과 공유 - 그리드 편입 */}
             <FeatureCard
               emoji="🔗"
-              title="결과\n공유"
+              title="결과 공유"
               subtitle="친구에게 보내기"
               color="bg-white"
               onClick={handleShare}
@@ -210,14 +210,14 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ emoji, title, subtitle, color
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       onClick={onClick}
-      className={`${color} bg-opacity-15 rounded-[20px] p-4 text-center flex flex-col items-center justify-between min-h-[130px] border border-white shadow-sm active:scale-95 transition-transform`}
+      className={`${color} bg-opacity-15 rounded-[20px] p-3 text-center flex flex-col items-center justify-center gap-1 min-h-[110px] border border-white shadow-sm active:scale-95 transition-transform`}
     >
-      <div className="text-7xl">{emoji}</div>
-      <div>
-        <h4 className="font-black text-[22px] leading-tight whitespace-pre-line mb-1 text-black/80">
-          {title.replace('\\n', '\n')}
+      <div className="text-6xl mb-1">{emoji}</div>
+      <div className="flex flex-col items-center">
+        <h4 className="font-black text-[20px] leading-tight text-black/80 whitespace-nowrap">
+          {title}
         </h4>
-        <p className="text-[17px] font-bold text-black/40">
+        <p className="text-[15px] font-bold text-black/40 whitespace-nowrap">
           {subtitle}
         </p>
       </div>
