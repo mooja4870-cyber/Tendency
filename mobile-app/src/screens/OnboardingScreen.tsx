@@ -52,11 +52,11 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) =
                   </div>
                   <h2 className="text-4xl font-display font-extrabold leading-tight mb-4 tracking-tight">
                     나도 몰랐던 <br />
-                    나의 <span className="gradient-text-warm">관점/성향</span>을 <br />
+                    나의 <span className="gradient-text-warm">관점·성향</span>을 <br />
                     발견하세요 !
                   </h2>
                   <p className="text-base text-[#666666] leading-relaxed mb-3" style={{ textWrap: 'balance' }}>
-                    30개의 질문을 통해 당신의 관점/성향을 정밀하게 분석합니다.
+                    30개의 질문을 통해 당신의 관점·성향을 정밀하게 분석합니다.
                   </p>
                   <p className="text-xs text-[#999999] leading-relaxed" style={{ textWrap: 'balance' }}>
                     본 진단은 미국 하버드 대학교 Jonathan Haidt 교수의
