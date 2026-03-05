@@ -1,0 +1,82 @@
+[
+    {
+        "country_code": "KR_NOW",
+        "country_name": "한국",
+        "flag_emoji": "🇰🇷",
+        "era": "현재",
+        "window_start": 0.25,
+        "window_end": 0.75,
+        "center_position": 0.50,
+        "explanation": "현대 한국의 정치 스펙트럼은 중도를 기준으로 비교적 대칭적입니다."
+    },
+    {
+        "country_code": "KR_1980",
+        "country_name": "한국",
+        "flag_emoji": "🇰🇷",
+        "era": "1980년대",
+        "window_start": 0.10,
+        "window_end": 0.50,
+        "center_position": 0.30,
+        "explanation": "1980년 한국은 전체적으로 보수 성향이 강했습니다. 지금의 당신이라면 민주화 운동에 공감했을 가능성이 높습니다."
+    },
+    {
+        "country_code": "US_NOW",
+        "country_name": "미국",
+        "flag_emoji": "🇺🇸",
+        "era": "현재",
+        "window_start": 0.20,
+        "window_end": 0.65,
+        "center_position": 0.42,
+        "explanation": "미국은 양극화가 심하고, 오버턴 윈도우가 한국보다 우측에 있습니다."
+    },
+    {
+        "country_code": "SE_NOW",
+        "country_name": "스웨덴",
+        "flag_emoji": "🇸🇪",
+        "era": "현재",
+        "window_start": 0.55,
+        "window_end": 0.95,
+        "center_position": 0.75,
+        "explanation": "스웨덴은 전체 정치 스펙트럼이 한국보다 훨씬 좌측에 위치합니다. 한국의 진보도 스웨덴 기준으로는 중도~보수일 수 있습니다."
+    },
+    {
+        "country_code": "JP_NOW",
+        "country_name": "일본",
+        "flag_emoji": "🇯🇵",
+        "era": "현재",
+        "window_start": 0.15,
+        "window_end": 0.55,
+        "center_position": 0.35,
+        "explanation": "일본은 전체적으로 보수 성향이 강한 사회입니다. 한국의 중도 성향도 일본에서는 진보적으로 분류될 수 있습니다."
+    },
+    {
+        "country_code": "DE_NOW",
+        "country_name": "독일",
+        "flag_emoji": "🇩🇪",
+        "era": "현재",
+        "window_start": 0.40,
+        "window_end": 0.80,
+        "center_position": 0.60,
+        "explanation": "각 나라마다 '중도'의 기준이 다릅니다. 진보와 보수는 절대적이지 않습니다."
+    },
+    {
+        "country_code": "FR_NOW",
+        "country_name": "프랑스",
+        "flag_emoji": "🇫🇷",
+        "era": "현재",
+        "window_start": 0.35,
+        "window_end": 0.80,
+        "center_position": 0.55,
+        "explanation": "각 나라마다 '중도'의 기준이 다릅니다. 진보와 보수는 절대적이지 않습니다."
+    },
+    {
+        "country_code": "GB_NOW",
+        "country_name": "영국",
+        "flag_emoji": "🇬🇧",
+        "era": "현재",
+        "window_start": 0.30,
+        "window_end": 0.70,
+        "center_position": 0.50,
+        "explanation": "각 나라마다 '중도'의 기준이 다릅니다. 진보와 보수는 절대적이지 않습니다."
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "order_index": 1,
+        "text_ko": "정부가 시장에 적극적으로 개입하여 경제적 불평등을 줄여야 한다",
+        "category": "ECONOMY",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "FAIRNESS",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": 14
+    },
+    {
+        "order_index": 2,
+        "text_ko": "복지 예산을 늘려 모든 국민에게 기본적인 생활을 보장해야 한다",
+        "category": "WELFARE",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": 14
+    },
+    {
+        "order_index": 3,
+        "text_ko": "결혼과 가족의 전통적 형태를 법으로 보호해야 한다",
+        "category": "TRADITION",
+        "dimension": "SOCIAL",
+        "moral_foundation": "PURITY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": 4
+    },
+    {
+        "order_index": 4,
+        "text_ko": "성별, 성적 지향 등에 따른 차별을 금지하는 법이 필요하다",
+        "category": "RIGHTS",
+        "dimension": "SOCIAL",
+        "moral_foundation": "FAIRNESS",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": 3
+    },
+    {
+        "order_index": 5,
+        "text_ko": "환경 보호를 위해 경제 성장을 일부 희생할 수 있다",
+        "category": "ENVIRONMENT",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 6,
+        "text_ko": "국가 안보를 위해 개인의 자유를 일부 제한할 수 있다",
+        "category": "SECURITY",
+        "dimension": "SOCIAL",
+        "moral_foundation": "AUTHORITY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 7,
+        "text_ko": "노동자의 권리를 강화하고 노동조합의 역할을 확대해야 한다",
+        "category": "ECONOMY",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "FAIRNESS",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 8,
+        "text_ko": "외국인 이민과 난민 수용에 보다 엄격한 기준을 적용해야 한다",
+        "category": "CULTURE",
+        "dimension": "SOCIAL",
+        "moral_foundation": "LOYALTY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": 15
+    },
+    {
+        "order_index": 9,
+        "text_ko": "교육은 국가가 책임지고 무상으로 제공해야 한다",
+        "category": "WELFARE",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 10,
+        "text_ko": "종교적 가치가 법과 제도에 반영되어야 한다",
+        "category": "TRADITION",
+        "dimension": "SOCIAL",
+        "moral_foundation": "PURITY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": 13
+    },
+    {
+        "order_index": 11,
+        "text_ko": "대기업에 대한 규제를 강화하여 공정한 경쟁을 유도해야 한다",
+        "category": "GOVERNANCE",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "FAIRNESS",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 12,
+        "text_ko": "국방비를 증액하여 군사력을 강화해야 한다",
+        "category": "SECURITY",
+        "dimension": "SOCIAL",
+        "moral_foundation": "AUTHORITY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 13,
+        "text_ko": "학교에서 성평등과 다양성 교육을 강화해야 한다",
+        "category": "RIGHTS",
+        "dimension": "SOCIAL",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": 10
+    },
+    {
+        "order_index": 14,
+        "text_ko": "시장의 자유 경쟁이 경제 문제를 해결하는 가장 좋은 방법이다",
+        "category": "ECONOMY",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "FAIRNESS",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": 1
+    },
+    {
+        "order_index": 15,
+        "text_ko": "과거 역사적 과오에 대해 국가가 공식적으로 사과하고 배상해야 한다",
+        "category": "CULTURE",
+        "dimension": "SOCIAL",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": 8
+    },
+    {
+        "order_index": 16,
+        "text_ko": "부유층에 대한 세금을 올려 소득 재분배를 강화해야 한다",
+        "category": "ECONOMY",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "FAIRNESS",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 17,
+        "text_ko": "사형제도는 유지되어야 한다",
+        "category": "GOVERNANCE",
+        "dimension": "SOCIAL",
+        "moral_foundation": "AUTHORITY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 18,
+        "text_ko": "동물 실험을 전면 금지해야 한다",
+        "category": "ENVIRONMENT",
+        "dimension": "SOCIAL",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 19,
+        "text_ko": "국가가 언론의 허위 정보를 규제할 권한을 가져야 한다",
+        "category": "GOVERNANCE",
+        "dimension": "SOCIAL",
+        "moral_foundation": "AUTHORITY",
+        "polarity": "YES_IS_CONSERVATIVE",
+        "contradicts_with": null
+    },
+    {
+        "order_index": 20,
+        "text_ko": "의료 서비스는 국가가 전적으로 책임져야 한다",
+        "category": "WELFARE",
+        "dimension": "ECONOMIC",
+        "moral_foundation": "CARE",
+        "polarity": "YES_IS_PROGRESSIVE",
+        "contradicts_with": null
+    }
+]

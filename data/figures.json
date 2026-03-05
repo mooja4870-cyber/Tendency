@@ -1,0 +1,244 @@
+[
+    {
+        "name_ko": "링컨",
+        "name_en": "Abraham Lincoln",
+        "era": "19C",
+        "country": "미국",
+        "flag_emoji": "🇺🇸",
+        "economic_position": 0.55,
+        "social_position": 0.70,
+        "dominant_morals": [
+            "FAIRNESS",
+            "CARE"
+        ],
+        "short_description": "노예 해방과 연방 유지를 이끈 미국의 제16대 대통령",
+        "famous_quote": "국민의, 국민에 의한, 국민을 위한 정부는 지상에서 사라지지 않을 것입니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "처칠",
+        "name_en": "Winston Churchill",
+        "era": "20C",
+        "country": "영국",
+        "flag_emoji": "🇬🇧",
+        "economic_position": 0.35,
+        "social_position": 0.30,
+        "dominant_morals": [
+            "LOYALTY",
+            "AUTHORITY"
+        ],
+        "short_description": "제2차 세계대전을 승리로 이끈 영국의 수상",
+        "famous_quote": "결코 굴복하지 마십시오. 결코, 결코, 결코!",
+        "image_url": ""
+    },
+    {
+        "name_ko": "간디",
+        "name_en": "Mahatma Gandhi",
+        "era": "20C",
+        "country": "인도",
+        "flag_emoji": "🇮🇳",
+        "economic_position": 0.65,
+        "social_position": 0.85,
+        "dominant_morals": [
+            "CARE",
+            "FAIRNESS"
+        ],
+        "short_description": "비폭력 불복종 운동을 이끈 인도의 독립 운동가",
+        "famous_quote": "세상에서 보고 싶은 변화가 있다면 스스로 그 변화가 되어야 합니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "마거릿 대처",
+        "name_en": "Margaret Thatcher",
+        "era": "20C",
+        "country": "영국",
+        "flag_emoji": "🇬🇧",
+        "economic_position": 0.15,
+        "social_position": 0.25,
+        "dominant_morals": [
+            "AUTHORITY",
+            "LOYALTY"
+        ],
+        "short_description": "영국의 첫 여성 총리, '철의 여인'",
+        "famous_quote": "사회라는 것은 없습니다. 개별 남성과 여성, 그리고 가족이 있을 뿐입니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "넬슨 만델라",
+        "name_en": "Nelson Mandela",
+        "era": "20C",
+        "country": "남아공",
+        "flag_emoji": "🇿🇦",
+        "economic_position": 0.70,
+        "social_position": 0.90,
+        "dominant_morals": [
+            "CARE",
+            "FAIRNESS"
+        ],
+        "short_description": "아파르트헤이트 철폐를 이끈 남아공의 첫 흑인 대통령",
+        "famous_quote": "가장 큰 영광은 한 번도 넘어지지 않는 것이 아니라, 넘어질 때마다 다시 일어나는 데 있습니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "김대중",
+        "name_en": "Kim Dae-jung",
+        "era": "20C",
+        "country": "한국",
+        "flag_emoji": "🇰🇷",
+        "economic_position": 0.65,
+        "social_position": 0.80,
+        "dominant_morals": [
+            "CARE",
+            "FAIRNESS"
+        ],
+        "short_description": "민주화 운동가이자 대한민국의 제15대 대통령",
+        "famous_quote": "행동하지 않는 양심은 악의 편입니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "박정희",
+        "name_en": "Park Chung-hee",
+        "era": "20C",
+        "country": "한국",
+        "flag_emoji": "🇰🇷",
+        "economic_position": 0.30,
+        "social_position": 0.15,
+        "dominant_morals": [
+            "AUTHORITY",
+            "LOYALTY"
+        ],
+        "short_description": "경제 개발을 이끈 대한민국의 제5~9대 대통령",
+        "famous_quote": "우리 세대가 조금 더 고생해서 후손들에게 잘 사는 나라를 물려줍시다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "세종대왕",
+        "name_en": "King Sejong",
+        "era": "15C",
+        "country": "한국",
+        "flag_emoji": "🇰🇷",
+        "economic_position": 0.55,
+        "social_position": 0.60,
+        "dominant_morals": [
+            "CARE",
+            "AUTHORITY"
+        ],
+        "short_description": "한글을 창제한 조선의 제4대 국왕",
+        "famous_quote": "백성이 나를 비판한다면, 그것은 내가 정치를 잘못하고 있다는 증거다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "메르켈",
+        "name_en": "Angela Merkel",
+        "era": "21C",
+        "country": "독일",
+        "flag_emoji": "🇩🇪",
+        "economic_position": 0.45,
+        "social_position": 0.55,
+        "dominant_morals": [
+            "CARE",
+            "FAIRNESS",
+            "AUTHORITY"
+        ],
+        "short_description": "독일의 첫 여성 총리, '무티(엄마)'",
+        "famous_quote": "우리는 할 수 있습니다(Wir schaffen das).",
+        "image_url": ""
+    },
+    {
+        "name_ko": "오바마",
+        "name_en": "Barack Obama",
+        "era": "21C",
+        "country": "미국",
+        "flag_emoji": "🇺🇸",
+        "economic_position": 0.60,
+        "social_position": 0.65,
+        "dominant_morals": [
+            "CARE",
+            "FAIRNESS"
+        ],
+        "short_description": "미국의 첫 흑인 대통령",
+        "famous_quote": "우리는 할 수 있습니다(Yes We Can).",
+        "image_url": ""
+    },
+    {
+        "name_ko": "레이건",
+        "name_en": "Ronald Reagan",
+        "era": "20C",
+        "country": "미국",
+        "flag_emoji": "🇺🇸",
+        "economic_position": 0.15,
+        "social_position": 0.30,
+        "dominant_morals": [
+            "LOYALTY",
+            "AUTHORITY"
+        ],
+        "short_description": "신자유주의 경제 정책을 이끈 미국의 제40대 대통령",
+        "famous_quote": "정부는 문제의 해결책이 아닙니다. 정부가 바로 문제입니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "이순신",
+        "name_en": "Yi Sun-sin",
+        "era": "16C",
+        "country": "한국",
+        "flag_emoji": "🇰🇷",
+        "economic_position": 0.50,
+        "social_position": 0.35,
+        "dominant_morals": [
+            "LOYALTY",
+            "AUTHORITY",
+            "CARE"
+        ],
+        "short_description": "임진왜란을 승리로 이끈 조선의 명장",
+        "famous_quote": "신에게는 아직 12척의 배가 남아있사옵니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "마틴루터킹",
+        "name_en": "Martin Luther King Jr.",
+        "era": "20C",
+        "country": "미국",
+        "flag_emoji": "🇺🇸",
+        "economic_position": 0.70,
+        "social_position": 0.95,
+        "dominant_morals": [
+            "CARE",
+            "FAIRNESS"
+        ],
+        "short_description": "미국의 흑인 민권 운동가",
+        "famous_quote": "나에게는 꿈이 있습니다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "안창호",
+        "name_en": "Ahn Chang-ho",
+        "era": "20C",
+        "country": "한국",
+        "flag_emoji": "🇰🇷",
+        "economic_position": 0.60,
+        "social_position": 0.70,
+        "dominant_morals": [
+            "CARE",
+            "LOYALTY"
+        ],
+        "short_description": "독립운동가이자 교육자, 도산 안창호",
+        "famous_quote": "진실은 반드시 따르는 자가 있고, 정의는 반드시 이루는 날이 있다.",
+        "image_url": ""
+    },
+    {
+        "name_ko": "비스마르크",
+        "name_en": "Otto von Bismarck",
+        "era": "19C",
+        "country": "독일",
+        "flag_emoji": "🇩🇪",
+        "economic_position": 0.25,
+        "social_position": 0.20,
+        "dominant_morals": [
+            "AUTHORITY",
+            "LOYALTY"
+        ],
+        "short_description": "독일 제국을 통일한 '철혈 재상'",
+        "famous_quote": "오늘날의 큰 문제들은 연설이나 다수결이 아니라 철과 혈에 의해 결정될 것입니다.",
+        "image_url": ""
+    }
+]

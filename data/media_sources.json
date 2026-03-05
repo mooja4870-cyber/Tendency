@@ -1,0 +1,104 @@
+[
+    {
+        "name": "조선일보",
+        "type": "NEWSPAPER",
+        "orientation": 0.20,
+        "logo_emoji": "📰"
+    },
+    {
+        "name": "중앙일보",
+        "type": "NEWSPAPER",
+        "orientation": 0.30,
+        "logo_emoji": "📰"
+    },
+    {
+        "name": "동아일보",
+        "type": "NEWSPAPER",
+        "orientation": 0.25,
+        "logo_emoji": "📰"
+    },
+    {
+        "name": "한겨레",
+        "type": "NEWSPAPER",
+        "orientation": 0.80,
+        "logo_emoji": "📰"
+    },
+    {
+        "name": "경향신문",
+        "type": "NEWSPAPER",
+        "orientation": 0.75,
+        "logo_emoji": "📰"
+    },
+    {
+        "name": "한국일보",
+        "type": "NEWSPAPER",
+        "orientation": 0.55,
+        "logo_emoji": "📰"
+    },
+    {
+        "name": "KBS",
+        "type": "TV",
+        "orientation": 0.50,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "MBC",
+        "type": "TV",
+        "orientation": 0.60,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "SBS",
+        "type": "TV",
+        "orientation": 0.50,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "JTBC",
+        "type": "TV",
+        "orientation": 0.60,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "TV조선",
+        "type": "TV",
+        "orientation": 0.20,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "채널A",
+        "type": "TV",
+        "orientation": 0.25,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "MBN",
+        "type": "TV",
+        "orientation": 0.30,
+        "logo_emoji": "📺"
+    },
+    {
+        "name": "오마이뉴스",
+        "type": "ONLINE",
+        "orientation": 0.85,
+        "logo_emoji": "🌐"
+    },
+    {
+        "name": "프레시안",
+        "type": "ONLINE",
+        "orientation": 0.85,
+        "logo_emoji": "🌐"
+    },
+    {
+        "name": "펜앤마이크",
+        "type": "ONLINE",
+        "orientation": 0.10,
+        "logo_emoji": "🌐"
+    },
+    {
+        "name": "뉴데일리",
+        "type": "ONLINE",
+        "orientation": 0.15,
+        "logo_emoji": "🌐"
+    }
+]
