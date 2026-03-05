@@ -1,0 +1,44 @@
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Node modules
+node_modules/
+mobile-app/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Android & Capacitor
+android/
+ios/
+**/*.apk
+**/*.aab
+mobile-app/android/
+mobile-app/dist/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ENV
+.env
+.env.local
+.env.development
+.env.production

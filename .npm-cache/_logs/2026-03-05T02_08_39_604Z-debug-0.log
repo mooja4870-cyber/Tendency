@@ -1,0 +1,502 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.8.0
+2 info using node@v24.13.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/.npmrc
+5 silly config load:file:/Users/mooja/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache" "--no-audit" "--no-fund"
+9 verbose logfile logs-max:10 dir:/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/.npm-cache/_logs/2026-03-05T02_08_39_604Z-
+10 verbose logfile /Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/.npm-cache/_logs/2026-03-05T02_08_39_604Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ENOTFOUND
+13 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+14 silly idealTree buildDeps
+15 silly reify mark retired [
+15 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/autoprefixer'
+15 silly reify ]
+16 silly reify mark retired [
+16 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/firebase'
+16 silly reify ]
+17 silly reify mark retired [
+17 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/framer-motion'
+17 silly reify ]
+18 silly reify mark retired [
+18 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/motion'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/motion-dom'
+19 silly reify ]
+20 silly reify mark retired [
+20 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-releases'
+20 silly reify ]
+21 silly reify mark retired [
+21 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/react-router'
+21 silly reify ]
+22 silly reify mark retired [
+22 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/react-router-dom'
+22 silly reify ]
+23 silly reify mark retired [
+23 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/set-cookie-parser'
+23 silly reify ]
+24 silly reify mark retired [
+24 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/tailwind-merge'
+24 silly reify ]
+25 silly reify mark retired [
+25 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/ai'
+25 silly reify ]
+26 silly reify mark retired [
+26 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/analytics'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/analytics-compat'
+27 silly reify ]
+28 silly reify mark retired [
+28 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app'
+28 silly reify ]
+29 silly reify mark retired [
+29 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app-check'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app-check-compat'
+30 silly reify ]
+31 silly reify mark retired [
+31 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app-compat'
+31 silly reify ]
+32 silly reify mark retired [
+32 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/auth'
+32 silly reify ]
+33 silly reify mark retired [
+33 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/auth-compat'
+33 silly reify ]
+34 silly reify mark retired [
+34 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/component'
+34 silly reify ]
+35 silly reify mark retired [
+35 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/data-connect'
+35 silly reify ]
+36 silly reify mark retired [
+36 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/database'
+36 silly reify ]
+37 silly reify mark retired [
+37 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/database-compat'
+37 silly reify ]
+38 silly reify mark retired [
+38 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/database-types'
+38 silly reify ]
+39 silly reify mark retired [
+39 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/firestore'
+39 silly reify ]
+40 silly reify mark retired [
+40 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/firestore-compat'
+40 silly reify ]
+41 silly reify mark retired [
+41 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/functions'
+41 silly reify ]
+42 silly reify mark retired [
+42 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/functions-compat'
+42 silly reify ]
+43 silly reify mark retired [
+43 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/installations'
+43 silly reify ]
+44 silly reify mark retired [
+44 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/installations-compat'
+44 silly reify ]
+45 silly reify mark retired [
+45 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/messaging'
+45 silly reify ]
+46 silly reify mark retired [
+46 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/performance'
+46 silly reify ]
+47 silly reify mark retired [
+47 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/messaging-compat'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/performance-compat'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/remote-config'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/remote-config-compat'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/storage'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/util'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/storage-compat'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@google/genai'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/baseline-browser-mapping',
+55 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/baseline-browser-mapping'
+55 silly reify ]
+56 silly reify mark retired [
+56 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/browserslist',
+56 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/browserslist'
+56 silly reify ]
+57 silly reify mark retired [
+57 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/esbuild',
+57 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/esbuild'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/glob',
+58 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/glob'
+58 silly reify ]
+59 silly reify mark retired [
+59 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/jiti',
+59 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/jiti'
+59 silly reify ]
+60 silly reify mark retired [
+60 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/json5',
+60 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/json5'
+60 silly reify ]
+61 silly reify mark retired [
+61 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/jsesc',
+61 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/jsesc'
+61 silly reify ]
+62 silly reify mark retired [
+62 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/mime',
+62 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/mime'
+62 silly reify ]
+63 silly reify mark retired [
+63 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/nanoid',
+63 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/nanoid'
+63 silly reify ]
+64 silly reify mark retired [
+64 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-abi/node_modules/semver',
+64 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-abi/node_modules/.bin/semver'
+64 silly reify ]
+65 silly reify mark retired [
+65 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/prebuild-install',
+65 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/prebuild-install'
+65 silly reify ]
+66 silly reify mark retired [
+66 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/rc',
+66 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/rc'
+66 silly reify ]
+67 silly reify mark retired [
+67 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/rimraf',
+67 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/rimraf'
+67 silly reify ]
+68 silly reify mark retired [
+68 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/rollup',
+68 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/rollup'
+68 silly reify ]
+69 silly reify mark retired [
+69 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/semver',
+69 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/semver'
+69 silly reify ]
+70 silly reify mark retired [
+70 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/tsx',
+70 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/tsx'
+70 silly reify ]
+71 silly reify mark retired [
+71 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/typescript',
+71 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/tsc',
+71 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/tsserver'
+71 silly reify ]
+72 silly reify mark retired [
+72 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/update-browserslist-db',
+72 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/update-browserslist-db'
+72 silly reify ]
+73 silly reify mark retired [
+73 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/vite',
+73 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/vite'
+73 silly reify ]
+74 silly reify mark retired [
+74 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/which',
+74 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/node-which'
+74 silly reify ]
+75 silly reify mark retired [
+75 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@babel/parser',
+75 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/parser'
+75 silly reify ]
+76 silly reify mark retired [
+76 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@grpc/proto-loader',
+76 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/proto-loader-gen-types'
+76 silly reify ]
+77 silly reify moves {
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/autoprefixer': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.autoprefixer-vsoQX2rX',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/firebase': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.firebase-MzpjsNUi',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/framer-motion': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.framer-motion-tHFn6A16',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/motion': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.motion-jtErP75i',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/motion-dom': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.motion-dom-hNzP83Iv',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-releases': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.node-releases-z2LFyl44',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/react-router': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.react-router-BEeIHDDN',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/react-router-dom': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.react-router-dom-yxpSiDeb',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/set-cookie-parser': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.set-cookie-parser-ewBIWgrm',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/tailwind-merge': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.tailwind-merge-FoivDPc9',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/ai': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.ai-voDMdtkd',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/analytics': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.analytics-eLdozeSf',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/analytics-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.analytics-compat-gCzN8SX4',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.app-xOMhdeCc',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app-check': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.app-check-ZImxAt10',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app-check-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.app-check-compat-WmZ1mXON',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/app-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.app-compat-aryDB2xO',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/auth': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.auth-U1ijMUHH',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/auth-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.auth-compat-NIcRxAuO',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/component': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.component-XzY1s8wB',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/data-connect': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.data-connect-wslrc2fF',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/database': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.database-IptGvRV6',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/database-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.database-compat-AsK7A4U4',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/database-types': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.database-types-eRyWiUIv',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/firestore': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.firestore-J9inGVUU',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/firestore-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.firestore-compat-OP4V61lN',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/functions': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.functions-qDewsaTc',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/functions-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.functions-compat-Z26iYc72',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/installations': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.installations-W9BL53Oc',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/installations-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.installations-compat-HEKFIQTM',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/messaging': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.messaging-K1xTYxOV',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/performance': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.performance-7cHgPLMG',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/messaging-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.messaging-compat-dPojQ2yO',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/performance-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.performance-compat-AcsWcCQp',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/remote-config': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.remote-config-SWDKsMRz',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/remote-config-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.remote-config-compat-O4txs2gD',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/storage': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.storage-xComTIic',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/util': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.util-RAlNiSEi',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/storage-compat': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@firebase/.storage-compat-UYBJHYzx',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@google/genai': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@google/.genai-ltWHe6Ex',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/baseline-browser-mapping': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.baseline-browser-mapping-0sDHQg0w',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/baseline-browser-mapping': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.baseline-browser-mapping-t7uajkAB',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/browserslist': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.browserslist-6IVaiCms',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/browserslist': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.browserslist-j9FkEUoS',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/esbuild': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.esbuild-yrtGoshc',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/esbuild': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.esbuild-8uTPnkvb',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/glob': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.glob-QGfuLOOk',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/glob': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.glob-OflMBAVM',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/jiti': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.jiti-e3BQlhfT',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/jiti': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.jiti-tvboTTTZ',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/json5': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.json5-W9WXbbEC',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/json5': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.json5-NW76aMzo',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/jsesc': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.jsesc-w2dW8TBy',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/jsesc': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.jsesc-ZRbd6EdL',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/mime': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.mime-6ifEvOON',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/mime': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.mime-gJysXrNj',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/nanoid': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.nanoid-7qMNBDj8',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/nanoid': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.nanoid-LGCQJS8k',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-abi/node_modules/semver': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-abi/node_modules/.semver-m6W06K7z',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-abi/node_modules/.bin/semver': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/node-abi/node_modules/.bin/.semver-bHOyrG9p',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/prebuild-install': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.prebuild-install-btjsTOzq',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/prebuild-install': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.prebuild-install-X1RnNS6p',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/rc': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.rc-xNvMbaoj',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/rc': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.rc-fIgRmX22',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/rimraf': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.rimraf-SXaq1Bzj',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/rimraf': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.rimraf-Cb7rXLIu',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/rollup': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.rollup-N65LnvdB',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/rollup': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.rollup-URmMSe19',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/semver': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.semver-8MDPU1vO',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/semver': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.semver-50KjuHwY',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/tsx': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.tsx-jVrXB4S5',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/tsx': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.tsx-jLEAiym5',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/typescript': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.typescript-eSiYJjtj',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/tsc': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.tsc-7SYewVeV',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/tsserver': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.tsserver-oS8JymAM',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/update-browserslist-db': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.update-browserslist-db-bHpIG8yN',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/update-browserslist-db': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.update-browserslist-db-SAX0hzDT',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/vite': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.vite-3rsIhflk',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/vite': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.vite-KXRrR1Sj',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/which': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.which-5l8z95pw',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/node-which': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.node-which-ek5MBsYT',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@babel/parser': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@babel/.parser-VRAedPas',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/parser': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.parser-yKeIIqiu',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@grpc/proto-loader': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/@grpc/.proto-loader-QufYbuhj',
+77 silly reify   '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/proto-loader-gen-types': '/Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/node_modules/.bin/.proto-loader-gen-types-4sm9FwFZ'
+77 silly reify }
+78 http cache @grpc/proto-loader@https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.7.15.tgz 0ms (cache hit)
+79 http cache which@https://registry.npmjs.org/which/-/which-2.0.2.tgz 0ms (cache hit)
+80 http cache tsx@https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz 0ms (cache hit)
+81 http cache update-browserslist-db@https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz 0ms (cache hit)
+82 http cache @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.29.0.tgz 0ms (cache hit)
+83 http cache vite@https://registry.npmjs.org/vite/-/vite-6.4.1.tgz 0ms (cache hit)
+84 http cache rollup@https://registry.npmjs.org/rollup/-/rollup-4.59.0.tgz 0ms (cache hit)
+85 http cache semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 0ms (cache hit)
+86 http cache rc@https://registry.npmjs.org/rc/-/rc-1.2.8.tgz 0ms (cache hit)
+87 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz 0ms (cache hit)
+88 http cache rimraf@https://registry.npmjs.org/rimraf/-/rimraf-5.0.10.tgz 0ms (cache hit)
+89 http cache mime@https://registry.npmjs.org/mime/-/mime-1.6.0.tgz 0ms (cache hit)
+90 http cache jsesc@https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz 0ms (cache hit)
+91 http cache prebuild-install@https://registry.npmjs.org/prebuild-install/-/prebuild-install-7.1.3.tgz 0ms (cache hit)
+92 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz 0ms (cache hit)
+93 http cache browserslist@https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz 0ms (cache hit)
+94 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz 0ms (cache hit)
+95 http cache json5@https://registry.npmjs.org/json5/-/json5-2.2.3.tgz 0ms (cache hit)
+96 http cache baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.10.0.tgz 0ms (cache hit)
+97 http cache glob@https://registry.npmjs.org/glob/-/glob-10.5.0.tgz 0ms (cache hit)
+98 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.27.3.tgz 0ms (cache hit)
+99 http cache @firebase/util@https://registry.npmjs.org/@firebase/util/-/util-1.14.0.tgz 0ms (cache hit)
+100 http cache @google/genai@https://registry.npmjs.org/@google/genai/-/genai-1.43.0.tgz 0ms (cache hit)
+101 http cache @firebase/storage@https://registry.npmjs.org/@firebase/storage/-/storage-0.14.1.tgz 0ms (cache hit)
+102 http cache @firebase/storage-compat@https://registry.npmjs.org/@firebase/storage-compat/-/storage-compat-0.4.1.tgz 0ms (cache hit)
+103 http cache @firebase/remote-config@https://registry.npmjs.org/@firebase/remote-config/-/remote-config-0.8.1.tgz 0ms (cache hit)
+104 http cache @firebase/performance-compat@https://registry.npmjs.org/@firebase/performance-compat/-/performance-compat-0.2.23.tgz 0ms (cache hit)
+105 http cache @firebase/messaging@https://registry.npmjs.org/@firebase/messaging/-/messaging-0.12.24.tgz 0ms (cache hit)
+106 http cache @firebase/performance@https://registry.npmjs.org/@firebase/performance/-/performance-0.7.10.tgz 0ms (cache hit)
+107 http cache @firebase/functions@https://registry.npmjs.org/@firebase/functions/-/functions-0.13.2.tgz 0ms (cache hit)
+108 http cache @firebase/remote-config-compat@https://registry.npmjs.org/@firebase/remote-config-compat/-/remote-config-compat-0.2.22.tgz 0ms (cache hit)
+109 http cache @firebase/functions-compat@https://registry.npmjs.org/@firebase/functions-compat/-/functions-compat-0.4.2.tgz 0ms (cache hit)
+110 http cache @firebase/installations-compat@https://registry.npmjs.org/@firebase/installations-compat/-/installations-compat-0.2.20.tgz 0ms (cache hit)
+111 http cache @firebase/firestore-compat@https://registry.npmjs.org/@firebase/firestore-compat/-/firestore-compat-0.4.6.tgz 0ms (cache hit)
+112 http cache @firebase/messaging-compat@https://registry.npmjs.org/@firebase/messaging-compat/-/messaging-compat-0.2.24.tgz 0ms (cache hit)
+113 http cache @firebase/firestore@https://registry.npmjs.org/@firebase/firestore/-/firestore-4.12.0.tgz 0ms (cache hit)
+114 http cache @firebase/installations@https://registry.npmjs.org/@firebase/installations/-/installations-0.6.20.tgz 0ms (cache hit)
+115 http cache @firebase/database-types@https://registry.npmjs.org/@firebase/database-types/-/database-types-1.0.17.tgz 0ms (cache hit)
+116 http cache @firebase/component@https://registry.npmjs.org/@firebase/component/-/component-0.7.1.tgz 0ms (cache hit)
+117 http cache @firebase/data-connect@https://registry.npmjs.org/@firebase/data-connect/-/data-connect-0.4.0.tgz 0ms (cache hit)
+118 http cache @firebase/database-compat@https://registry.npmjs.org/@firebase/database-compat/-/database-compat-2.1.1.tgz 0ms (cache hit)
+119 http cache @firebase/auth-compat@https://registry.npmjs.org/@firebase/auth-compat/-/auth-compat-0.6.3.tgz 0ms (cache hit)
+120 http cache @firebase/app-check-compat@https://registry.npmjs.org/@firebase/app-check-compat/-/app-check-compat-0.4.1.tgz 0ms (cache hit)
+121 http cache @firebase/auth@https://registry.npmjs.org/@firebase/auth/-/auth-1.12.1.tgz 0ms (cache hit)
+122 http cache @firebase/app-compat@https://registry.npmjs.org/@firebase/app-compat/-/app-compat-0.5.9.tgz 0ms (cache hit)
+123 http cache @firebase/database@https://registry.npmjs.org/@firebase/database/-/database-1.1.1.tgz 0ms (cache hit)
+124 http cache @firebase/analytics-compat@https://registry.npmjs.org/@firebase/analytics-compat/-/analytics-compat-0.2.26.tgz 0ms (cache hit)
+125 http cache @firebase/app-check@https://registry.npmjs.org/@firebase/app-check/-/app-check-0.11.1.tgz 0ms (cache hit)
+126 http cache @firebase/app@https://registry.npmjs.org/@firebase/app/-/app-0.14.9.tgz 0ms (cache hit)
+127 http cache @firebase/ai@https://registry.npmjs.org/@firebase/ai/-/ai-2.9.0.tgz 0ms (cache hit)
+128 http cache @firebase/analytics@https://registry.npmjs.org/@firebase/analytics/-/analytics-0.10.20.tgz 0ms (cache hit)
+129 http cache tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz 0ms (cache hit)
+130 http cache set-cookie-parser@https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz 0ms (cache hit)
+131 http cache react-router@https://registry.npmjs.org/react-router/-/react-router-7.13.1.tgz 0ms (cache hit)
+132 http cache node-releases@https://registry.npmjs.org/node-releases/-/node-releases-2.0.36.tgz 0ms (cache hit)
+133 http cache react-router-dom@https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.13.1.tgz 0ms (cache hit)
+134 http cache framer-motion@https://registry.npmjs.org/framer-motion/-/framer-motion-12.34.5.tgz 0ms (cache hit)
+135 http cache motion@https://registry.npmjs.org/motion/-/motion-12.34.5.tgz 0ms (cache hit)
+136 http cache autoprefixer@https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.27.tgz 0ms (cache hit)
+137 http cache semver@https://registry.npmjs.org/semver/-/semver-7.7.4.tgz 0ms (cache hit)
+138 http cache firebase@https://registry.npmjs.org/firebase/-/firebase-12.10.0.tgz 0ms (cache hit)
+139 http cache motion-dom@https://registry.npmjs.org/motion-dom/-/motion-dom-12.34.5.tgz 0ms (cache hit)
+140 silly tarball no local data for @grpc/proto-loader@https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.7.15.tgz. Extracting by manifest.
+141 silly tarball no local data for which@https://registry.npmjs.org/which/-/which-2.0.2.tgz. Extracting by manifest.
+142 silly tarball no local data for tsx@https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz. Extracting by manifest.
+143 silly tarball no local data for update-browserslist-db@https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz. Extracting by manifest.
+144 silly tarball no local data for @babel/parser@https://registry.npmjs.org/@babel/parser/-/parser-7.29.0.tgz. Extracting by manifest.
+145 silly tarball no local data for vite@https://registry.npmjs.org/vite/-/vite-6.4.1.tgz. Extracting by manifest.
+146 silly tarball no local data for rollup@https://registry.npmjs.org/rollup/-/rollup-4.59.0.tgz. Extracting by manifest.
+147 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz. Extracting by manifest.
+148 silly tarball no local data for rc@https://registry.npmjs.org/rc/-/rc-1.2.8.tgz. Extracting by manifest.
+149 silly tarball no local data for typescript@https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz. Extracting by manifest.
+150 silly tarball no local data for rimraf@https://registry.npmjs.org/rimraf/-/rimraf-5.0.10.tgz. Extracting by manifest.
+151 http cache esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz 0ms (cache hit)
+152 http cache cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz 0ms (cache hit)
+153 silly tarball no local data for mime@https://registry.npmjs.org/mime/-/mime-1.6.0.tgz. Extracting by manifest.
+154 silly tarball no local data for jsesc@https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz. Extracting by manifest.
+155 silly tarball no local data for prebuild-install@https://registry.npmjs.org/prebuild-install/-/prebuild-install-7.1.3.tgz. Extracting by manifest.
+156 silly tarball no local data for jiti@https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz. Extracting by manifest.
+157 silly tarball no local data for browserslist@https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz. Extracting by manifest.
+158 silly tarball no local data for nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz. Extracting by manifest.
+159 silly tarball no local data for json5@https://registry.npmjs.org/json5/-/json5-2.2.3.tgz. Extracting by manifest.
+160 silly tarball no local data for baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.10.0.tgz. Extracting by manifest.
+161 silly tarball no local data for glob@https://registry.npmjs.org/glob/-/glob-10.5.0.tgz. Extracting by manifest.
+162 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.27.3.tgz. Extracting by manifest.
+163 silly tarball no local data for @firebase/util@https://registry.npmjs.org/@firebase/util/-/util-1.14.0.tgz. Extracting by manifest.
+164 silly tarball no local data for @google/genai@https://registry.npmjs.org/@google/genai/-/genai-1.43.0.tgz. Extracting by manifest.
+165 silly tarball no local data for @firebase/storage@https://registry.npmjs.org/@firebase/storage/-/storage-0.14.1.tgz. Extracting by manifest.
+166 silly tarball no local data for @firebase/storage-compat@https://registry.npmjs.org/@firebase/storage-compat/-/storage-compat-0.4.1.tgz. Extracting by manifest.
+167 silly tarball no local data for @firebase/remote-config@https://registry.npmjs.org/@firebase/remote-config/-/remote-config-0.8.1.tgz. Extracting by manifest.
+168 silly tarball no local data for @firebase/performance-compat@https://registry.npmjs.org/@firebase/performance-compat/-/performance-compat-0.2.23.tgz. Extracting by manifest.
+169 silly tarball no local data for @firebase/messaging@https://registry.npmjs.org/@firebase/messaging/-/messaging-0.12.24.tgz. Extracting by manifest.
+170 silly tarball no local data for @firebase/performance@https://registry.npmjs.org/@firebase/performance/-/performance-0.7.10.tgz. Extracting by manifest.
+171 silly tarball no local data for @firebase/functions@https://registry.npmjs.org/@firebase/functions/-/functions-0.13.2.tgz. Extracting by manifest.
+172 silly tarball no local data for @firebase/remote-config-compat@https://registry.npmjs.org/@firebase/remote-config-compat/-/remote-config-compat-0.2.22.tgz. Extracting by manifest.
+173 silly tarball no local data for @firebase/functions-compat@https://registry.npmjs.org/@firebase/functions-compat/-/functions-compat-0.4.2.tgz. Extracting by manifest.
+174 silly tarball no local data for @firebase/installations-compat@https://registry.npmjs.org/@firebase/installations-compat/-/installations-compat-0.2.20.tgz. Extracting by manifest.
+175 silly tarball no local data for @firebase/firestore-compat@https://registry.npmjs.org/@firebase/firestore-compat/-/firestore-compat-0.4.6.tgz. Extracting by manifest.
+176 silly tarball no local data for @firebase/messaging-compat@https://registry.npmjs.org/@firebase/messaging-compat/-/messaging-compat-0.2.24.tgz. Extracting by manifest.
+177 silly tarball no local data for @firebase/firestore@https://registry.npmjs.org/@firebase/firestore/-/firestore-4.12.0.tgz. Extracting by manifest.
+178 silly tarball no local data for @firebase/installations@https://registry.npmjs.org/@firebase/installations/-/installations-0.6.20.tgz. Extracting by manifest.
+179 silly tarball no local data for @firebase/database-types@https://registry.npmjs.org/@firebase/database-types/-/database-types-1.0.17.tgz. Extracting by manifest.
+180 silly tarball no local data for @firebase/component@https://registry.npmjs.org/@firebase/component/-/component-0.7.1.tgz. Extracting by manifest.
+181 silly tarball no local data for @firebase/data-connect@https://registry.npmjs.org/@firebase/data-connect/-/data-connect-0.4.0.tgz. Extracting by manifest.
+182 silly tarball no local data for @firebase/database-compat@https://registry.npmjs.org/@firebase/database-compat/-/database-compat-2.1.1.tgz. Extracting by manifest.
+183 silly tarball no local data for @firebase/auth-compat@https://registry.npmjs.org/@firebase/auth-compat/-/auth-compat-0.6.3.tgz. Extracting by manifest.
+184 silly tarball no local data for @firebase/app-check-compat@https://registry.npmjs.org/@firebase/app-check-compat/-/app-check-compat-0.4.1.tgz. Extracting by manifest.
+185 silly tarball no local data for @firebase/auth@https://registry.npmjs.org/@firebase/auth/-/auth-1.12.1.tgz. Extracting by manifest.
+186 silly tarball no local data for @firebase/app-compat@https://registry.npmjs.org/@firebase/app-compat/-/app-compat-0.5.9.tgz. Extracting by manifest.
+187 silly tarball no local data for @firebase/database@https://registry.npmjs.org/@firebase/database/-/database-1.1.1.tgz. Extracting by manifest.
+188 silly tarball no local data for @firebase/analytics-compat@https://registry.npmjs.org/@firebase/analytics-compat/-/analytics-compat-0.2.26.tgz. Extracting by manifest.
+189 silly tarball no local data for @firebase/app-check@https://registry.npmjs.org/@firebase/app-check/-/app-check-0.11.1.tgz. Extracting by manifest.
+190 silly tarball no local data for @firebase/app@https://registry.npmjs.org/@firebase/app/-/app-0.14.9.tgz. Extracting by manifest.
+191 silly tarball no local data for @firebase/ai@https://registry.npmjs.org/@firebase/ai/-/ai-2.9.0.tgz. Extracting by manifest.
+192 silly tarball no local data for @firebase/analytics@https://registry.npmjs.org/@firebase/analytics/-/analytics-0.10.20.tgz. Extracting by manifest.
+193 silly tarball no local data for tailwind-merge@https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.5.0.tgz. Extracting by manifest.
+194 silly tarball no local data for set-cookie-parser@https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz. Extracting by manifest.
+195 silly tarball no local data for react-router@https://registry.npmjs.org/react-router/-/react-router-7.13.1.tgz. Extracting by manifest.
+196 silly tarball no local data for node-releases@https://registry.npmjs.org/node-releases/-/node-releases-2.0.36.tgz. Extracting by manifest.
+197 silly tarball no local data for react-router-dom@https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.13.1.tgz. Extracting by manifest.
+198 silly tarball no local data for framer-motion@https://registry.npmjs.org/framer-motion/-/framer-motion-12.34.5.tgz. Extracting by manifest.
+199 silly tarball no local data for motion@https://registry.npmjs.org/motion/-/motion-12.34.5.tgz. Extracting by manifest.
+200 silly tarball no local data for autoprefixer@https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.27.tgz. Extracting by manifest.
+201 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.7.4.tgz. Extracting by manifest.
+202 silly tarball no local data for firebase@https://registry.npmjs.org/firebase/-/firebase-12.10.0.tgz. Extracting by manifest.
+203 silly tarball no local data for motion-dom@https://registry.npmjs.org/motion-dom/-/motion-dom-12.34.5.tgz. Extracting by manifest.
+204 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz. Extracting by manifest.
+205 silly tarball no local data for cookie@https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz. Extracting by manifest.
+206 http fetch GET https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.7.15.tgz attempt 1 failed with ENOTFOUND
+207 http fetch GET https://registry.npmjs.org/which/-/which-2.0.2.tgz attempt 1 failed with ENOTFOUND
+208 http fetch GET https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz attempt 1 failed with ENOTFOUND
+209 http fetch GET https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz attempt 1 failed with ENOTFOUND
+210 http fetch GET https://registry.npmjs.org/@babel/parser/-/parser-7.29.0.tgz attempt 1 failed with ENOTFOUND
+211 http fetch GET https://registry.npmjs.org/vite/-/vite-6.4.1.tgz attempt 1 failed with ENOTFOUND
+212 http fetch GET https://registry.npmjs.org/rollup/-/rollup-4.59.0.tgz attempt 1 failed with ENOTFOUND
+213 http fetch GET https://registry.npmjs.org/semver/-/semver-6.3.1.tgz attempt 1 failed with ENOTFOUND
+214 http fetch GET https://registry.npmjs.org/rc/-/rc-1.2.8.tgz attempt 1 failed with ENOTFOUND
+215 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz attempt 1 failed with ENOTFOUND
+216 http fetch GET https://registry.npmjs.org/rimraf/-/rimraf-5.0.10.tgz attempt 1 failed with ENOTFOUND
+217 http fetch GET https://registry.npmjs.org/mime/-/mime-1.6.0.tgz attempt 1 failed with ENOTFOUND
+218 http fetch GET https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz attempt 1 failed with ENOTFOUND
+219 http fetch GET https://registry.npmjs.org/prebuild-install/-/prebuild-install-7.1.3.tgz attempt 1 failed with ENOTFOUND
+220 http fetch GET https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz attempt 1 failed with ENOTFOUND
+221 http fetch GET https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz attempt 1 failed with ENOTFOUND
+222 http fetch GET https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz attempt 1 failed with ENOTFOUND
+223 http fetch GET https://registry.npmjs.org/npm attempt 2 failed with ENOTFOUND
+224 http fetch GET https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.7.15.tgz attempt 2 failed with ENOTFOUND
+225 http fetch GET https://registry.npmjs.org/which/-/which-2.0.2.tgz attempt 2 failed with ENOTFOUND
+226 http fetch GET https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz attempt 2 failed with ENOTFOUND
+227 http fetch GET https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz attempt 2 failed with ENOTFOUND
+228 http fetch GET https://registry.npmjs.org/@babel/parser/-/parser-7.29.0.tgz attempt 2 failed with ENOTFOUND
+229 http fetch GET https://registry.npmjs.org/vite/-/vite-6.4.1.tgz attempt 2 failed with ENOTFOUND
+230 http fetch GET https://registry.npmjs.org/rollup/-/rollup-4.59.0.tgz attempt 2 failed with ENOTFOUND
+231 http fetch GET https://registry.npmjs.org/semver/-/semver-6.3.1.tgz attempt 2 failed with ENOTFOUND
+232 http fetch GET https://registry.npmjs.org/rc/-/rc-1.2.8.tgz attempt 2 failed with ENOTFOUND
+233 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz attempt 2 failed with ENOTFOUND
+234 http fetch GET https://registry.npmjs.org/rimraf/-/rimraf-5.0.10.tgz attempt 2 failed with ENOTFOUND
+235 http fetch GET https://registry.npmjs.org/mime/-/mime-1.6.0.tgz attempt 2 failed with ENOTFOUND
+236 http fetch GET https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz attempt 2 failed with ENOTFOUND
+237 http fetch GET https://registry.npmjs.org/prebuild-install/-/prebuild-install-7.1.3.tgz attempt 2 failed with ENOTFOUND
+238 http fetch GET https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz attempt 2 failed with ENOTFOUND
+239 http fetch GET https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz attempt 2 failed with ENOTFOUND
+240 http fetch GET https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz attempt 2 failed with ENOTFOUND
+241 http fetch GET https://registry.npmjs.org/npm attempt 3 failed with ENOTFOUND
+242 http fetch GET https://registry.npmjs.org/@grpc/proto-loader/-/proto-loader-0.7.15.tgz attempt 3 failed with ENOTFOUND
+243 http fetch GET https://registry.npmjs.org/tsx/-/tsx-4.21.0.tgz attempt 3 failed with ENOTFOUND
+244 http fetch GET https://registry.npmjs.org/which/-/which-2.0.2.tgz attempt 3 failed with ENOTFOUND
+245 http fetch GET https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz attempt 3 failed with ENOTFOUND
+246 http fetch GET https://registry.npmjs.org/@babel/parser/-/parser-7.29.0.tgz attempt 3 failed with ENOTFOUND
+247 http fetch GET https://registry.npmjs.org/vite/-/vite-6.4.1.tgz attempt 3 failed with ENOTFOUND
+248 http fetch GET https://registry.npmjs.org/rollup/-/rollup-4.59.0.tgz attempt 3 failed with ENOTFOUND
+249 http fetch GET https://registry.npmjs.org/semver/-/semver-6.3.1.tgz attempt 3 failed with ENOTFOUND
+250 http fetch GET https://registry.npmjs.org/rc/-/rc-1.2.8.tgz attempt 3 failed with ENOTFOUND
+251 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz attempt 3 failed with ENOTFOUND
+252 http fetch GET https://registry.npmjs.org/rimraf/-/rimraf-5.0.10.tgz attempt 3 failed with ENOTFOUND
+253 http fetch GET https://registry.npmjs.org/mime/-/mime-1.6.0.tgz attempt 3 failed with ENOTFOUND
+254 http fetch GET https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz attempt 3 failed with ENOTFOUND
+255 http fetch GET https://registry.npmjs.org/prebuild-install/-/prebuild-install-7.1.3.tgz attempt 3 failed with ENOTFOUND
+256 http fetch GET https://registry.npmjs.org/jiti/-/jiti-2.6.1.tgz attempt 3 failed with ENOTFOUND
+257 http fetch GET https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz attempt 3 failed with ENOTFOUND
+258 http fetch GET https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz attempt 3 failed with ENOTFOUND
+259 verbose cwd /Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본
+260 verbose os Darwin 25.2.0
+261 verbose node v24.13.1
+262 verbose npm  v11.8.0
+263 error Exit handler never called!
+264 error This is an error with npm itself. Please report this error at:
+265 error   <https://github.com/npm/cli/issues>
+266 verbose exit 1
+267 verbose code 1
+268 error A complete log of this run can be found in: /Users/mooja/AI_Study/Intel-6/M03-1/module18_student 복사본/.npm-cache/_logs/2026-03-05T02_08_39_604Z-debug-0.log
