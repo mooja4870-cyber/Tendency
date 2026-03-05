@@ -110,7 +110,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onStart }) =
             onClick={() => setOnboardingIndex(prev => prev + 1)}
             className="flex-[2] bg-cta text-white rounded-full py-4 flex items-center justify-center gap-2 font-bold shadow-lg shadow-cta/20 active:scale-95 transition-transform"
           >
-            다음으로 ➡️
+            다음으로
           </button>
         ) : (
           <button
