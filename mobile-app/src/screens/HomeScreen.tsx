@@ -73,7 +73,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
 
             <h3 className="text-2xl font-extrabold text-black/40 mb-1 tracking-tight">나의 관점·성향</h3>
             <h2
-              className="text-6xl font-display font-black mb-6 tracking-tight"
+              className="text-[48px] font-display font-black mb-6 tracking-tight"
               style={{ color: getColorForLabel(result.overallLabel) }}
             >
               {result.overallLabel}
@@ -93,7 +93,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ result, onNavigate }) =>
 
         {/* Feature Grid Section */}
         <div className="space-y-4">
-          <h3 className="text-5xl font-display font-extrabold text-black/80 px-1 tracking-tight">🔍 더 깊이 알아보기</h3>
+          <h3 className="text-[32px] font-display font-extrabold text-black/80 px-1 tracking-tight">🔍 더 깊이 알아보기</h3>
 
           <div className="grid grid-cols-2 gap-3">
             {/* 상세 분석 - 와이드형 (상단 배치, 높이 축소) */}
@@ -243,9 +243,11 @@ function SpectrumBar({ position, leftLabel, rightLabel }: { position: number, le
           initial={{ left: '50%' }}
           animate={{ left: `${position * 100}%` }}
           transition={{ type: 'spring', damping: 20, stiffness: 100 }}
-          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-[#FFD700] border-[2px] border-white shadow-md z-10"
+          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 border-[2px] border-white/50 shadow-lg z-10"
           style={{
-            rotate: '45deg'
+            background: 'radial-gradient(circle at 30% 30%, #ff7eb3, #ff758c 50%, #8b5cf6 100%)',
+            boxShadow: '0 0 15px rgba(139, 92, 246, 0.8), inset -2px -2px 5px rgba(0, 0, 0, 0.3)',
+            borderRadius: '50%'
           }}
         />
       </div>

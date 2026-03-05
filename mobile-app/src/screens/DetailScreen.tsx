@@ -38,7 +38,7 @@ export const DetailScreen: React.FC<DetailScreenProps> = ({ result, onBack }) =>
         <button onClick={onBack} className="p-2 hover:bg-black/5 rounded-full transition-colors">
           <ChevronLeft className="w-6 h-6" />
         </button>
-        <h2 className="text-6xl font-display font-extrabold tracking-tight">상세 분석 보고서</h2>
+        <h2 className="text-[46px] font-display font-extrabold tracking-tight">상세 분석 보고서</h2>
       </div>
 
       {/* Category Analysis Card */}
@@ -146,8 +146,12 @@ function SpectrumBar({ position, leftLabel, rightLabel }: { position: number, le
           initial={{ left: '50%' }}
           animate={{ left: `${position * 100}%` }}
           transition={{ type: 'spring', damping: 15, stiffness: 60 }}
-          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-[#1B3A6B] border-2 border-[#FFD700] shadow-md z-10"
-          style={{ transform: 'translateY(-50%) translateX(-50%) rotate(45deg)' }}
+          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-6 h-6 border-[2px] border-white/50 shadow-lg z-10"
+          style={{
+            background: 'radial-gradient(circle at 30% 30%, #ff7eb3, #ff758c 50%, #8b5cf6 100%)',
+            boxShadow: '0 0 10px rgba(139, 92, 246, 0.6), inset -1px -1px 3px rgba(0, 0, 0, 0.3)',
+            borderRadius: '50%'
+          }}
         />
       </div>
     </div>
