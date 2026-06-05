@@ -42,3 +42,6 @@ Thumbs.db
 .env.local
 .env.development
 .env.production
+
+# local build toolchain (JDK, signer) - do not commit
+.tools/
