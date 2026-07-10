@@ -88,16 +88,17 @@ else:
         answers = []
         raw_answers = []
         for q in questions_data:
-            ans = st.session_state.quiz_answers.get(q["id"])
+            q_id = q.get("id", q.get("order_index"))
+            ans = st.session_state.quiz_answers.get(q_id)
             if ans:
                 answers.append(UserAnswer(
-                    question_id=q["id"],
+                    question_id=q_id,
                     choice=choice_map.get(ans["choice"], AnswerChoice.UNSURE),
                     timestamp=time.time(),
                     response_time_ms=ans.get("time_ms", 0),
                 ))
                 raw_answers.append({
-                    "question_id": q["id"],
+                    "question_id": q_id,
                     "choice": ans["choice"],
                     "response_time_ms": ans.get("time_ms", 0),
                 })
@@ -105,7 +106,7 @@ else:
         # Question 객체 변환
         q_objects = [
             Question(
-                id=q["id"],
+                id=q.get("id", q.get("order_index")),
                 order_index=q["order_index"],
                 text=q["text_ko"],
                 category=q["category"],

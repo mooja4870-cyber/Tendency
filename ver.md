@@ -6,3 +6,4 @@
 |------|------|--------|------|
 | v1.0.0 | 2026-06-05 10:25:00 | gh-pages | APK 다운로드 페이지(`download.html`) 추가. GitHub raw URL(`/raw/main/Tendency.apk`)로 클릭 시 폰에 APK 다운로드/설치 가능. ver.md 신설. |
 | v1.1.0 | 2026-06-05 12:25:00 | main | 앱 아이콘을 **프리즘 분광(스펙트럼)** 디자인으로 교체. 다크 네이비 배경 + 백색광이 프리즘을 통과해 무지개로 분광되는 형태(앱명 "프리즘"·"다각도 분석" 컨셉 반영). `Tendency.apk` 내부 mipmap 아이콘(legacy/round/adaptive-foreground 전 해상도) 교체 후 zipalign + v2/v3 재서명. 아이콘 생성기: `mobile-app/gen_icon.py`. ⚠️ 재서명 키가 변경되어(디버그 키) 기존 설치본은 삭제 후 새로 설치 필요. |
+| v1.1.1 | 2026-07-10 12:06:00 | main | 퀴즈 결과 처리 시 `KeyError ('id')` 버그 수정 |
