@@ -181,13 +181,14 @@ try:
         
     st.markdown("<div style='height: 24px'></div>", unsafe_allow_html=True)
 
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("주간 토론", use_container_width=True):
-            st.switch_page("pages/3_debate.py")
-    with col2:
-        if st.button("궁합 비교", use_container_width=True):
-            st.switch_page("pages/4_compatibility.py")
+    # 당분간 숨김 처리
+    # col1, col2 = st.columns(2)
+    # with col1:
+    #     if st.button("주간 토론", use_container_width=True):
+    #         st.switch_page("pages/3_debate.py")
+    # with col2:
+    #     if st.button("궁합 비교", use_container_width=True):
+    #         st.switch_page("pages/4_compatibility.py")
 
     st.markdown("<div style='height: 8px'></div>", unsafe_allow_html=True)
     if st.button("전역 통계 및 탐색", use_container_width=True):
