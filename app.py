@@ -176,7 +176,7 @@ try:
 
     st.markdown("<div style='height: 10px'></div>", unsafe_allow_html=True)
 
-    if st.button("✨ 진단 시작하기", type="primary", use_container_width=True):
+    if st.button("진단 시작하기", type="primary", use_container_width=True):
         st.switch_page("pages/1_quiz.py")
         
     st.markdown("<div style='height: 24px'></div>", unsafe_allow_html=True)

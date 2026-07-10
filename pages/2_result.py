@@ -235,11 +235,11 @@ if insight:
 st.markdown("---")
 col1, col2, col3 = st.columns(3)
 with col1:
-    if st.button("🤝 궁합 비교하기", use_container_width=True):
+    if st.button("궁합 비교하기", use_container_width=True):
         st.switch_page("pages/4_compatibility.py")
 with col2:
-    if st.button("🗳️ 토론 참여하기", use_container_width=True):
+    if st.button("토론 참여하기", use_container_width=True):
         st.switch_page("pages/3_debate.py")
 with col3:
-    if st.button("🔮 홈으로", use_container_width=True):
+    if st.button("홈으로", use_container_width=True):
         st.switch_page("app.py")
